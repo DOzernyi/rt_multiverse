@@ -1,0 +1,45 @@
+study_folder,status,primary_inputs,prepared_inputs,dataset_ids,note
+2xcgu-winkowski_searching_2024,primary raw-RT inputs recovered,2,0,winkowski2024_e2; winkowski2024_e4,Source-defined critical sites; only documented postcritical main effects added.
+396hw-dlugosz_gender_2025,primary raw-RT inputs recovered,1,0,dlugosz2025_gender,Source-defined critical sites; only documented postcritical main effects added.
+3tjwv-wilke_processing_2025,primary raw-RT inputs recovered,1,0,wilke2025_appositives,Source-defined critical sites; only documented postcritical main effects added.
+4fpru-schoknecht_syntactic_2025,primary raw-RT inputs recovered,2,0,schoknecht2025_rep_s1; schoknecht2025_rep_s2,Source-defined critical sites; only documented postcritical main effects added.
+4szpx-tan_task_2020,primary raw-RT inputs recovered,1,0,tan2020_attachment,Source-defined critical sites; only documented postcritical main effects added.
+5r93v-benjamin_conceptual_2023,primary raw-RT inputs recovered,2,0,benjamin2023_existing; benjamin2023_novel,Source-defined critical sites; only documented postcritical main effects added.
+78vmz-fujita_onlinex_2024,prepared-only reading data located,0,2,fujita_onlinex_2024_e1; fujita_onlinex_2024_e2,Prior RT exclusions cannot be undone using the supplied outcome columns; excluded from primary RDS/model run.
+7zvhg-ito_predictability_2026,primary raw-RT inputs recovered,1,0,ito2026_predictability,Source-defined critical sites; only documented postcritical main effects added.
+9dp6e-fujita_active_2025,primary raw-RT inputs recovered,2,0,fujita2025_active; fujita2025_active_additional,Source-defined critical sites; only documented postcritical main effects added.
+aw8t3-fujita_parsing_2021,primary raw-RT inputs recovered,2,0,fujita2021_e1; fujita2021_e2,Source-defined critical sites; only documented postcritical main effects added.
+bdg7u-slaats_more_2026,primary raw-RT inputs recovered,1,0,slaats2026_agreement,Source-defined critical sites; only documented postcritical main effects added.
+cwyk6-cutter_syntactic_2023,primary raw-RT inputs recovered,1,0,cutter2023_either,Source-defined critical sites; only documented postcritical main effects added.
+czq8x-orth_positive_2025,primary raw-RT inputs recovered,1,0,orth2025_maze,Source-defined critical sites; only documented postcritical main effects added.
+czvb9-haeuser_age_2024,primary raw-RT inputs recovered,1,0,haeuser2024_age,Source-defined critical sites; only documented postcritical main effects added.
+d34y5-scheffler_processing_2022,primary raw-RT inputs recovered,1,0,scheffler2022_emoji,Source-defined critical sites; only documented postcritical main effects added.
+e56k4-haeuser_reduced_2025,prepared-only reading data located,0,1,haeuser2025_reduced,Prior RT exclusions cannot be undone using the supplied outcome columns; excluded from primary RDS/model run.
+f8qwh-paape_local_2025,primary raw-RT inputs recovered,1,0,paape2025_spr_semantic,Source-defined critical sites; only documented postcritical main effects added.
+figshare-tucker_attraction_2021,primary raw-RT inputs recovered,8,0,tucker2021_e1; tucker2021_e2a; tucker2021_e2b; tucker2021_e3; tucker2021_e4a; tucker2021_e4b; tucker2021_e5a; tucker2021_e5b,Source-defined critical sites; only documented postcritical main effects added.
+fp86z-dlugosz_is_2025,primary raw-RT inputs recovered,2,0,dlugosz2025_def; dlugosz2025_indef,Source-defined critical sites; only documented postcritical main effects added.
+gdjne-keshev_representation_3a-b,primary raw-RT inputs recovered,2,0,keshev2026_e3a; keshev2026_e3b,Source-defined critical sites; only documented postcritical main effects added.
+github-boyce_maze_2020,primary raw-RT inputs recovered,5,0,boyce2020_spr; boyce2020_l_maze; boyce2020_g_maze; boyce2020_one_b_maze; boyce2020_gulo_maze,Source-defined critical sites; only documented postcritical main effects added.
+gxpwd-cairncross_first_2026,prepared-only reading data located,0,2,cairncross2026_null; cairncross2026_overt,Prior RT exclusions cannot be undone using the supplied outcome columns; excluded from primary RDS/model run.
+hdzsr-saul_interference_2025,primary raw-RT inputs recovered,1,0,saul2025_do,Source-defined critical sites; only documented postcritical main effects added.
+he6cf-ishihara_evaluating_2025,primary raw-RT inputs recovered,1,0,ishihara2025_e2,Source-defined critical sites; only documented postcritical main effects added.
+j86m9-gastmann_conducting_2026,primary raw-RT inputs recovered,1,0,gastmann2026_spr,Source-defined critical sites; only documented postcritical main effects added.
+kcqt9-giskes_abstract_2023,primary raw-RT inputs recovered,2,0,giskes2023_number; giskes2023_gender,Source-defined critical sites; only documented postcritical main effects added.
+kftg7-fujita_l-maze_2025,primary raw-RT inputs recovered,2,0,fujita2025_maze; fujita2025_spr,Source-defined critical sites; only documented postcritical main effects added.
+m7dqc-schoknecht_time_2026,primary raw-RT inputs recovered,1,0,schoknecht2026_local_coherence,Source-defined critical sites; only documented postcritical main effects added.
+n38tk-palleschi_contrasting_2026,primary raw-RT inputs recovered,3,0,palleschi2026_e1; palleschi2026_e2; palleschi2026_e3,Source-defined critical sites; only documented postcritical main effects added.
+na6vy-haigh_diving_2022,primary raw-RT inputs recovered,1,0,haigh2022_context,Source-defined critical sites; only documented postcritical main effects added.
+naj9k-orth_extending_2026,primary raw-RT inputs recovered,2,0,orth2026_lmaze; orth2026_amaze,Source-defined critical sites; only documented postcritical main effects added.
+nhc2p-fujita_memory_2024,primary raw-RT inputs recovered,2,0,fujita_memory_2024_e1; fujita_memory_2024_e2,Source-defined critical sites; only documented postcritical main effects added.
+p2rck-fujita_reassessment_2026,primary raw-RT inputs recovered,8,0,fujita2026_reassessment_avcspr_gp; fujita2026_reassessment_avcspr_sv; fujita2026_reassessment_navcspr_gp; fujita2026_reassessment_navcspr_sv; fujita2026_reassessment_ncspr_gp; fujita2026_reassessment_ncspr_sv; fujita2026_reassessment_pcspr_gp; fujita2026_reassessment_pcspr_sv,Source-defined critical sites; only documented postcritical main effects added.
+pykua-fujita_interference_2023,prepared-only reading data located,0,4,fujita_interference_2023_e1; fujita_interference_2023_e2; fujita_interference_2023_e3; fujita_interference_2023_e4,Prior RT exclusions cannot be undone using the supplied outcome columns; excluded from primary RDS/model run.
+qfnsg-fujita_active_2026,primary raw-RT inputs recovered,3,0,fujita_active_2026_e1; fujita_active_2026_e2; fujita_active_2026_e3,Source-defined critical sites; only documented postcritical main effects added.
+qudny-brockmeyer-koch_explaining_2026,primary raw-RT inputs recovered,1,0,brockmeyer2026_prediction,Source-defined critical sites; only documented postcritical main effects added.
+qz93x-keshev_representation_2024,primary raw-RT inputs recovered,2,0,keshev2024_e1; keshev2024_e2,Source-defined critical sites; only documented postcritical main effects added.
+rh4xz-fujita_predictive_2023,primary raw-RT inputs recovered,1,0,fujita2023_predictive,Source-defined critical sites; only documented postcritical main effects added.
+rnbjm-mifka-profozic_unpacking_2024,primary raw-RT inputs recovered,3,0,mifka2024_ability; mifka2024_epistemic; mifka2024_permission,Source-defined critical sites; only documented postcritical main effects added.
+rsdp5-kim_incremental_2024,primary raw-RT inputs recovered,3,0,kim2024_e1; kim2024_e2; kim2024_e3,Source-defined critical sites; only documented postcritical main effects added.
+t42b6-fujita_real-time_2026,primary raw-RT inputs recovered,3,0,fujita_real-time_2026_e1; fujita_real-time_2026_e2; fujita_real-time_2026_e3,Source-defined critical sites; only documented postcritical main effects added.
+t9nf3-haeuser_how_2022,prepared-only reading data located,0,1,haeuser2022_prediction,Prior RT exclusions cannot be undone using the supplied outcome columns; excluded from primary RDS/model run.
+tcz5n-karimi_facilitatory_2025,primary raw-RT inputs recovered,3,0,karimi2025_prior_semantic_data; karimi2025_e1; karimi2025_e3,Source-defined critical sites; only documented postcritical main effects added.
+ye6dj-frank_missing-vp_2021,out of task scope,0,0,,"Eye-tracking fixation measures, not an SPR/Maze keypress experiment."

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "independent_engine": "Python/pandas, separate from R summarization",
+  "coefficient_regions": 380,
+  "unstable": 221,
+  "direction_changes": 185,
+  "publication_weighted_disagreement": 0.12996364996364998,
+  "inference_figure_points_checked": 65,
+  "retention_figure_points_checked": 13,
+  "matched_decision_pairs_checked": 88,
+  "matched_decision_source_rows_checked": 3256,
+  "matched_decision_marginals_checked": 20,
+  "matched_pair_comparisons": 197600,
+  "checks": [
+    "pipeline totals",
+    "significance and direction changes",
+    "publication weighting",
+    "same-formula restriction",
+    "effect-range and precision quartiles",
+    "figure point values",
+    "all matched decision comparisons and publication weights",
+    "main-effect and interaction confidence-interval width summaries",
+    "six-panel estimate-sensitivity figure included unchanged",
+    "recommendations are final discussion subsection"
+  ]
+}

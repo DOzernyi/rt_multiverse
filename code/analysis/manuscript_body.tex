@@ -1,0 +1,664 @@
+\section{Introduction}
+
+Reading-time experiments are intended to distinguish accounts of how people
+understand language. The observations used to make that distinction are,
+however, not a direct record of a single cognitive process. A long response
+can reflect difficult integration, an unsuccessful retrieval, a momentary
+interruption, or a delay unrelated to the sentence. Very short responses can
+reflect efficient recognition, anticipation, or an accidental keypress.
+Researchers must decide which observations to retain, on what scale to model
+them, and how to represent variation between readers and materials. These
+decisions are necessary, but their consequences are not necessarily negligible.
+
+Outlier treatment and transformation address different problems. Removing a
+response changes the set of events represented in the analysis; transforming
+a response changes the scale on which retained events are compared. Neither
+operation is a substitute for the other. A fixed upper bound, for example,
+removes the same physical duration in every condition, whereas a
+distribution-relative bound can remove a response in one condition and retain
+an equally long response in another. A logarithm compresses the upper tail
+without deleting it. Consequently, agreement between two analyses that both
+use ``trimmed RTs'' cannot be assumed merely from that description.
+
+There are substantive reasons to examine these decisions in sentence
+processing. In self-paced reading, readers advance through successive words
+or phrases, and comprehension is usually assessed separately. In a Maze
+task, each advance requires choosing the next sentence segment against a
+distractor. This additional decision can change both the distribution of
+durations and which observations become available after an error
+\citep{boyce_maze_2020}. Even within a task, different constructions and
+regions need not have interchangeable baselines. A threshold appropriate
+for one region may remove a meaningful part of another region's response
+distribution. The general problem predates current web-based experiments:
+\citet{ratcliff_methods_1993} demonstrated why the handling of response-time
+distributions deserves methodological attention.
+
+The relevant question is therefore not simply whether a particular pipeline
+produces a significant effect. It is whether conclusions, estimated effects,
+and uncertainty remain similar over an explicitly defined set of defensible
+pipelines. An analysis that reports only the preferred pipeline does not show
+this dependence. Researcher flexibility can affect reported evidence
+\citep{simmons_false-positive_2011}; a multiverse makes a specified part of
+that flexibility visible rather than allowing it to remain implicit
+\citep{steegen_multiverse_2016,simonsohn_specification_2020}.
+
+Existing methodological evidence motivates, but does not replace, a
+sentence-processing reanalysis. Simulation studies demonstrate that the
+performance of RT exclusion methods depends on the assumed contamination
+process \citep{ratcliff_methods_1993,berger_outliers_2021}. More recently,
+\citet{bognar_multiverse_2025} used a multiverse simulation of the congruency
+sequence effect to examine how analytical pathways affect Type I and Type II
+errors. The present study asks a complementary question: how much do
+inference, estimated effects, and precision actually vary across archived
+SPR and Maze inputs under a common declared workflow? Unlike a simulation,
+this empirical corpus cannot establish which pipeline recovers the truth.
+
+The present analysis crosses 13 exclusion rules with six transformation
+specifications in a source-audited collection of existing reading experiments.
+The initial source bibliography contains approximately 80 experiment entries.
+The implemented analysis is a source-audited collection of analytical inputs,
+not a claim to have reanalysed 80 independent experiments. We distinguish inputs for which
+untrimmed RTs could be reconstructed or identified from author-prepared
+inputs for which earlier exclusions cannot be reversed. This distinction
+matters: a permissive new cutoff cannot restore observations that an earlier
+cutoff already removed.
+
+We ask three related questions. First, how often does a coefficient's
+classification relative to \(p=.05\) change across preprocessing pipelines?
+Second, how much do effect estimates, their directions, and standard errors
+vary? Third, do the observed patterns appear to differ with the task,
+initial distribution, or dataset size? These are questions about analytical
+dependence in the supplied data, not tests of which pipeline recovers an
+unknown true effect. The multiverse does not turn a majority of significant
+pipelines into independent replications or into a probability that a
+linguistic hypothesis is correct.
+
+\section{Preprocessing procedures}
+
+\subsection{Common eligibility and comparison subsets}
+
+Before constructing the multiverse, we identify the response column,
+participant and material identifiers, factorial manipulation, and analysis
+regions from the supplied files and analysis scripts. Missing, nonfinite,
+and nonpositive RTs cannot be analysed by every transformation and are
+excluded from every pipeline. Practice, filler, and questionnaire records
+are excluded where the adapter identifies them. Documented non-RT
+eligibility decisions are held constant where they can be reconstructed.
+The Saul DO adapter also holds fixed the authors' two participant-level
+exclusions for RT-based reasons; ``untrimmed'' in that case describes the
+available trial RTs conditional on that participant restriction.
+These initial decisions are recorded separately from the observations
+subsequently removed by a multiverse rule.
+
+Critical sites are identified from source reports and scripts. A post-critical
+site is included only where the source paper reports an experimental main
+effect there; examining a site, finding an interaction alone, or finding a
+nuisance age effect does not suffice. Distinct critical sites and documented
+post-critical positions remain separate analysis jobs. Region selection is
+therefore source-based, not selected from the new multiverse results. For the
+Boyce datasets, the authors' supplied relative-clause label join identifies
+the disambiguating position with its original SPR offset. For ellipsis,
+the source-defined \emph{did too} unit is summed rather than treating
+\emph{too} alone as the complete region. Other multi-position definitions
+follow the source-specific adapter and are documented in the region ledger;
+no adapter chooses a region by its new significance or its fastest response.
+
+All distribution-relative rules are calculated within the same
+condition--region subset, pooling observations across participants and
+items. The focal participant's observations remain in that reference set.
+The reference statistic is calculated once from the eligible input; removal
+is not iterated. This common grouping isolates the choice of reference
+statistic and bounds. It is deliberately not a claim that every original
+article used this grouping. In particular, a participant-relative SD rule
+from an original analysis is not reproduced merely by including an SD rule
+in the present multiverse.
+
+\subsection{Exclusion rules}
+
+The 13 rules comprise no additional exclusion; mean \(\pm k\) sample SD for
+\(k\in\{1.5,2,2.5,3\}\); fixed limits of 100--2,000, 100--3,000,
+200--2,000, or 200--3,000 ms; the median-relative rule implemented in
+\rtprocess; and median \(\pm k\) MAD for \(k\in\{2,2.5,3\}\).
+Boundary observations are retained: exclusion requires a value strictly
+outside a bound. ``No exclusion'' means no additional RT-based removal after
+common eligibility, not the recovery of missing or previously deleted data.
+
+For the median-relative rule, an observation \(x\) is retained when
+\[
+            0.5M \leq x \leq 2.8M,
+\]
+where \(M\) is the subset median. This is equivalently
+\(M-0.5M \leq x \leq M+1.8M\). The distinction between an additive
+distance of \(1.8M\) above the median and an upper multiplier of \(1.8\)
+is important: the implemented upper bound is \(2.8M\).
+The MAD rules use the normal-consistency-scaled median absolute deviation,
+\[
+       \operatorname{MAD}=1.4826\,
+          \operatorname{median}_i|x_i-M|.
+\]
+Thus, the numerical MAD multipliers do not refer to an unscaled absolute
+deviation. Explicitly stating that constant is necessary for reproducing
+the comparison.
+
+The rules represent different assumptions, not different strengths of a
+single intervention. Fixed bounds assume that physical duration is the
+relevant criterion. SD rules depend on the mean and spread, both of which
+can be influenced by an upper tail. Median-relative bounds tie the
+permitted interval to a robust measure of location but not to an
+independently estimated spread. MAD rules use robust location and spread.
+No rule, by itself, establishes that every excluded event is cognitively
+impossible. We therefore report removal proportions and resulting inference
+rather than defining success as the greatest amount of removal.
+
+\subsection{Transformations}
+
+After exclusion, each retained dataset is represented on six requested
+scales: milliseconds, natural logarithm, base-10 logarithm,
+\(-1000/x\), square root, and Box--Cox
+\citep{box_analysis_1964}. The inverse is increasing over positive RTs,
+as are the other transformations used here, so the sign of a simple
+condition difference is not mechanically reversed by defining
+\(-1000/x\) rather than \(1/x\). Nevertheless, differences between
+distributional locations need not remain equal across nonlinear scales.
+
+For Box--Cox,
+\[
+ g_\lambda(x)=
+ \begin{cases}
+  (x^\lambda-1)/\lambda,&\lambda\neq0,\\
+  \log(x),&\lambda=0.
+ \end{cases}
+\]
+We estimate one \(\lambda\) for each dataset--region--exclusion combination,
+not a separate transformation for each condition. Estimation minimizes the
+Gaussian profile objective from the complete fixed-effects design, including
+the Jacobian, over \([-2,2]\). This is a fixed-design screening profile,
+not a full mixed-model likelihood profile. Boundary estimates are recorded
+and should not be mistaken for unconstrained optima. The purpose of varying
+\(\lambda\) is to allow the shape adjustment to depend on the retained data,
+without allowing conditions within the same comparison to have incompatible
+measurement scales.
+
+Natural and base-10 logarithms satisfy
+\(\log_{10}(x)=\log(x)/\log(10)\). They consequently produce identical
+tests in otherwise identical Gaussian mixed models; their coefficients and
+standard errors differ only by a known constant. We include both in the
+78 requested specifications but obtain the base-10 output by exact
+rescaling of the natural-log fit. Summaries of analytical disagreement use
+the 65 distinct exclusion--scale combinations, not 78 purportedly independent
+choices.
+
+\section{Source datasets}
+
+\input{generated/corpus_text.tex}
+
+Primary inputs retain the original RT column or are reconstructed before the
+author's trial-level RT trimming, conditional on disclosed common eligibility
+restrictions. Previously prepared secondary inputs remain in the audit ledger
+but are not pooled with the primary run or presented as a completed secondary
+analysis. Their distributions may already reflect unrecoverable decisions.
+This distinction is about provenance, not the reliability of the source
+research. The inventory reports paper-derived preprocessing policies rather
+than substituting a script filename for a description. Discrepancies between
+paper and script are preserved in the accompanying policy evidence table.
+
+The collection is heterogeneous and is not a random sample of
+psycholinguistic experiments. Multiple datasets can come from the same
+publication; split manipulations may reuse participants; and critical and
+post-critical regions belong to the same experimental observations.
+Summed participant counts would therefore overstate the number of
+independent people. Dataset-specific counts are provided instead. Claims
+about task differences are necessarily limited by the number and identity
+of source publications, not just by the number of fitted models.
+
+\section{Analysis}
+
+\input{generated/workflow.tex}
+Figure~\ref{fig:workflow} summarizes the full workflow. A specification is
+the combination of screening rule and outcome scale, together with the
+fixed model-reduction algorithm; it is not just a transformation applied
+to a single unchanging fitted model.
+
+\subsection{Inferential models and random-effects reduction}
+
+For each dataset and region, the fixed-effects design contains the
+documented experimental factors and their interactions. Binary factors are
+sum-coded \(-0.5,+0.5\); factors with more levels use \(K-1\) explicit
+sum contrasts scaled by one half. The latter are not interpreted as
+pairwise tests merely because individual coefficients are printed. We
+retain the third factor in the Tucker experiment that also manipulates
+ambiguity, rather than collapsing it into an unexplained condition label.
+Factor-level mappings accompany the reproducibility outputs.
+
+We fit Gaussian linear mixed models with \texttt{lme4}
+\citep{bates_fitting_2015}, beginning with random intercepts for readers
+and materials and all design-supported slopes
+\citep{barr_random_2013}. A slope is included only when all factors
+participating in that slope vary within the corresponding grouping unit.
+Thus, the instruction to fit a maximal model does not require an
+unidentifiable within-participant slope for a between-participant factor.
+Numeric contrast columns make the independent-slope specification explicit,
+including for interactions and factors with more than two levels.
+
+If the initial model fails the acceptance criteria, we first remove random
+effect correlations. We then remove the random component with the smallest
+estimated variance and refit, repeating until the fit is both converged
+and nonsingular. The procedure considers intercepts as well as slopes;
+any removal of a grouping intercept is recorded rather than hidden.
+If no estimable random structure remains, or a fit error prevents an
+estimated-variance ordering, the pipeline is reported as unsuccessful.
+We do not declare success by replacing a failed mixed model with an
+independent-observations regression.
+
+Models use REML and the \texttt{nloptwrap} optimizer, with at most
+20,000 objective evaluations per attempt. Source-verified unchanged
+critical-region caches from an earlier run retain their original
+\texttt{bobyqa} fits, with the engine identified in each checkpoint.
+Corrected inputs cannot reuse those caches. Singularity is assessed
+at tolerance \(10^{-4}\). Preliminary singular fits need not undergo
+expensive numerical derivative calculations; every provisionally accepted
+fit is refitted with derivatives enabled and must have optimizer code zero,
+no \texttt{lme4} convergence message, and a nonsingular random-effects
+covariance estimate. The audit retains formulas, warnings, components
+removed, estimated removal variances, and final variances.
+
+For numerical stability, the transformed response is centered and divided
+by its within-pipeline SD during fitting. Reported native-scale coefficients
+and SEs are restored algebraically. We obtain approximate Satterthwaite
+degrees of freedom and two-sided \(t\)-distribution \(p\) values using
+\texttt{lmerTest}; 95\% intervals use the corresponding \(t\) quantile.
+An unadjusted \(p<.05\) defines the classification whose stability is
+examined. It does not designate one pipeline as the preferred analysis.
+Significant interactions receive conditional simple-effect contrasts of
+the accepted model, with its covariance and degrees-of-freedom calculation
+retained. These exploratory follow-ups are reported separately from the
+unconditionally evaluated fixed coefficients.
+
+\subsection{Stability outcomes}
+
+We distinguish significance, effect, and precision stability. A coefficient
+is significance-unstable if at least one successful distinct pipeline gives
+\(p<.05\) and another does not. We also report the proportion of successful
+pipelines that disagree with a fixed reference: no additional exclusion
+followed by a natural logarithm. That reference supplies a common
+comparison, not ground truth or a reconstruction of every source article.
+Failed models are shown separately and are not silently treated as
+nonsignificant results.
+
+For effect stability, we retain native-scale estimates, direction,
+and standardized estimates obtained by dividing a coefficient by the SD of
+its pipeline's transformed outcome. The standardized quantity permits a
+dimensionless description, but its denominator also changes with
+preprocessing. Accordingly, a change in it is not automatically a change in
+one invariant psychological effect. We do not directly pool an
+inverse-scale coefficient with a coefficient in milliseconds. Precision
+is represented by native and standardized SEs and by 95\% intervals.
+Direction changes and movement across \(p=.05\) are separate outcomes:
+a coefficient can remain positive while changing significance.
+
+Random-effects reduction can itself affect precision. We therefore record
+whether each accepted formula matches the reference formula and provide
+disagreement summaries restricted to that same-structure subset. These
+summaries help identify dependence that is not solely a consequence of a
+different final formula; they do not make model adaptation ignorable.
+The principal estimand is the result of a complete specified workflow,
+including the required convergence procedure.
+
+We additionally visualize changes in estimates and uncertainty for every
+exclusion--transformation combination relative to no additional exclusion
+and untransformed RTs. This separate reference makes exclusion alone,
+transformation alone, and their combination directly identifiable; it does
+not replace the natural-log reference for significance stability.
+Fixed-effect shifts are absolute differences between standardized coefficients.
+SE and confidence-interval-width changes are absolute percentage differences
+from their corresponding standardized reference values, so increases and
+decreases do not cancel. Interaction-magnitude shifts compare the absolute
+values of corresponding standardized interaction coefficients.
+
+Random-effect estimate shifts average absolute differences in shared
+variance and covariance entries, expressed in pipeline outcome-variance
+units. Entries are matched by grouping factor and named design terms, not
+by their printed row order. Removed or added entries are not assigned an
+estimated zero. Instead, structural change is shown separately as
+\(100[1-|A\cap B|/|A\cup B|]\), where \(A\) and \(B\) are the sets of
+estimated covariance entries in the two accepted models. These summaries
+use the same publication weighting as the other descriptive outcomes.
+
+\subsection{Isolating exclusion and transformation decisions}
+
+A workflow that differs from the reference in both exclusion and scale
+does not reveal which decision produced the difference. We therefore
+also make matched comparisons in which only one preprocessing dimension
+changes. For exclusion, we compare each of the 78 distinct pairs of rules
+on each of the five nonredundant scales. For transformation, we compare
+each of the ten distinct pairs of scales under each of the 13 exclusion
+rules. The same coefficient and region appear on both sides of every
+comparison. A changed classification means that exactly one of the two
+tests has \(p<.05\). We also calculate the absolute difference between
+their signed \(t\) statistics.
+
+We average these changes across the levels of the dimension held fixed,
+then across the distinct pairs of the dimension being changed. An
+individual rule's sensitivity is its mean disagreement with each other
+rule, averaging over scales; an individual scale's sensitivity is its
+mean disagreement with each other scale, averaging over rules. These
+summaries do not require choosing one preferred workflow as an anchor.
+We retain anchored comparisons with no exclusion or natural logarithms
+for ease of interpretation. Dataset and publication weighting follow
+the procedure below. For the exclusion-minus-transformation comparison,
+the bootstrap resamples the same publications for both quantities.
+
+These are descriptive comparisons over a finite, deliberately enumerated
+decision space, not percentages of variance explained or causal
+attributions. The numbers of levels and their spacing differ across
+dimensions. Each workflow retains its own accepted random-effects
+structure, so changing only preprocessing does not require an unchanged
+final covariance model. Matched-pair summaries also record whether the
+accepted formulas agree.
+
+\subsection{Aggregation and exploratory moderators}
+
+Pipeline outputs share nearly all their observations, so they are not
+independent replications. We first summarize within a coefficient and
+region, then within a dataset, and finally give source publications equal
+weight. Uncertainty intervals for those summaries resample entire
+publications 1,000 times. This preserves the grouping of split datasets and
+regions within a source, although it cannot supply missing source-level
+diversity.
+
+Associations with initial RT skewness, participant count, item count, and
+absolute reference-effect magnitude are
+exploratory Spearman correlations between dataset-level disagreement
+summaries and the corresponding characteristics. Their uncertainty is
+estimated by the same publication-cluster resampling. Task comparisons are
+descriptive: a task is not randomly assigned across independent source
+publications in this corpus. No causal interpretation or universal ranking
+of preprocessing policies follows from these associations.
+
+\section{Results}
+\input{generated/results_text.tex}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.93\textwidth]{figures/retention.pdf}
+\caption{Additional exclusion under each rule in primary inputs. Points average
+regions within analytical inputs and then give source publications equal weight;
+intervals resample publications 1,000 times. Fixed-bound labels are in ms.
+The median rule retains \(0.5M\)--\(2.8M\); MAD is consistency-scaled.
+The figure describes the supplied region-level eligible observations,
+not the proportion originally excluded by source authors.}
+\label{fig:retention}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.93\textwidth]{figures/inference_stability.pdf}
+\caption{Source-weighted percentage of successful coefficient--region tests
+whose \(p<.05\) classification differs from the no-additional-exclusion,
+natural-log reference in primary inputs.
+Each cell gives the percentage numerically as well as by shading.
+Natural and base-10 logs are identical for this outcome, so only one is shown.
+The surface describes complete workflows; Figure~\ref{fig:decisions}
+separates changes in exclusion from changes in transformation.
+Cells are not independent evidence.}
+\label{fig:inference}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/decision_sensitivity.pdf}
+\caption{Inferential sensitivity when one decision dimension changes at a time.
+A: percentage of matched comparisons whose \(p<.05\) classification changes
+when exclusion changes at fixed scale, or scale changes at fixed exclusion.
+B: each rule's average disagreement with the other 12 rules, across five
+scales. C: each scale's average disagreement with the other four scales,
+across 13 rules. Rules and scales are ranked by these descriptive rates;
+the panels do not show statistical accuracy or variance explained.
+All panels give publications equal weight after within-input averaging;
+intervals are 95\% publication-cluster bootstrap intervals. The same
+horizontal scale is used throughout. Fixed bounds are in milliseconds,
+the median rule retains \(0.5M\)--\(2.8M\), and MAD is consistency-scaled.}
+\label{fig:decisions}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.93\textwidth]{figures/lambda.pdf}
+\caption{Distribution of estimated Box--Cox parameters in primary
+dataset--region combinations after each exclusion rule. The dashed line
+marks the logarithmic limit. Estimates come from a fixed-design profile
+over \([-2,2]\); estimates near either endpoint are flagged in the
+reproducibility outputs. Boxes describe between-input variation, not
+confidence intervals for a common parameter.}
+\label{fig:lambda}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.94\textwidth]{figures/precision.pdf}
+\caption{Effect and precision stability across distinct successful workflows.
+Left: within-coefficient range of standardized estimates. Right:
+base-2 logarithm of the ratio of largest to smallest standardized SE; 0
+denotes equal SEs, 1 a twofold ratio, and 2 a fourfold ratio. Each
+coefficient--region combination contributes once. These are descriptive
+distributions, not confidence intervals or pipeline-independent replications.}
+\label{fig:precision}
+\end{figure*}
+
+\clearpage
+\onecolumn
+\unsetvruler
+\begin{landscape}
+\begin{figure}[p]
+\centering
+\includegraphics[width=.94\linewidth]{figures/preprocessing_effects.pdf}
+\caption{Changes in estimates and uncertainty across all requested preprocessing
+combinations, relative to no removal and untransformed RTs. Outlined rows and
+columns identify transformations alone and exclusions alone. A--E summarize
+absolute changes; F distinguishes structural changes from shifts in shared
+random-effect estimates. Standardization removes arbitrary units, not
+differences between nonlinear-scale estimands. Publication-bootstrap intervals
+and signed SE/interval-width changes accompany the reproducibility materials.}
+\label{fig:estimate-sensitivity}
+\end{figure}
+\end{landscape}
+\clearpage
+\twocolumn
+\linenoon
+
+\section{Discussion}
+
+\input{generated/discussion_text.tex}
+
+\subsection{Interpreting analytical dependence}
+
+The contribution is not a claim that preprocessing flexibility is newly
+discovered. Rather, it is a source-audited empirical characterization of
+that flexibility in sentence-level reading tasks. In multiverse analysis,
+alternative datasets and workflows make analytical dependence visible
+\citep{steegen_multiverse_2016}; specification curve analysis additionally
+emphasizes theoretically justified, statistically valid and nonredundant
+specifications \citep{simonsohn_specification_2020}. Counting two logarithmic
+bases as separate inferential choices would violate the nonredundancy
+principle. Even after collapsing them, however, our uniformly enumerated
+65 workflows should not be interpreted as equally plausible scientific
+models, and their fractions are not posterior probabilities.
+
+This distinction also separates the present study from the simulation
+framework of \citet{bognar_multiverse_2025}. Their known generating
+conditions permit examination of false-positive and true-positive rates.
+Here, the true status and size of source effects are unknown. Agreement
+with the no-exclusion logarithmic reference is therefore an index of
+analytical similarity, not estimated accuracy, power, replication success,
+or Type I error control. The reported confidence intervals describe
+between-publication uncertainty in this corpus; they are not joint
+specification-curve tests of a common linguistic hypothesis.
+
+The condition-relative rules require particular care. A distributional
+shift caused by a manipulation can affect a condition's own reference
+median, mean, or spread. This may be appropriate when the goal is to remove
+responses that are unusual relative to a local baseline. It is not
+equivalent to enforcing a common duration threshold across conditions.
+Our common condition--region grouping makes that choice explicit but
+does not establish that it is always preferable to participant-relative
+or model-residual screening. Those grouping decisions are additional
+dimensions of a larger multiverse.
+
+\subsection{Exclusion, transformation, and the scientific estimand}
+
+The present results should be read alongside, rather than as a replacement
+for, research on identifying invalid responses. \citet{berger_outliers_2021}
+showed that exclusion methods behave differently when simulated contaminants
+occupy the tails versus overlap the valid distribution. Thus, no empirical
+ranking by retention or significance is sufficient to identify a
+contamination-removal rule. \citet{miller_pooling_2024} developed an empirical
+CDF-pooling approach to characterize outliers in large lexical-decision
+datasets. That work illustrates the value of independent information about
+contaminants; its estimates cannot simply be transferred to contextual
+reading or Maze decisions. Our removed observations were not labelled as
+cognitively invalid, and the study supplies no such labels retrospectively.
+
+Transformation raises a different scientific issue. \citet{lo_transform_2015}
+demonstrated that nonlinear transformations can alter conclusions about
+additivity and interaction, and discussed generalized mixed models as an
+alternative that makes distributional and link assumptions explicit.
+Consequently, a significant raw-scale interaction and a nonsignificant
+log-scale interaction need not be competing answers to exactly the same
+estimand. Our standardized ranges facilitate numerical description but
+do not eliminate this distinction. A theory of absolute processing
+delays, proportional slowing, or changes confined to the upper tail may
+require different models and different summaries.
+
+The variation in Box--Cox parameters therefore motivates explicit scale
+assessment, not automatic preference for whichever scale maximizes
+normality or significance. The profile used here concerns the fixed-effects
+Gaussian screening model and is not a substitute for checking the final
+model's residual structure, heteroscedasticity, and dependency assumptions.
+Generalized, distributional, robust or mixture models are reasonable
+extensions when motivated by the task and estimand; they were not fitted
+in this multiverse and are not claimed to outperform its workflows.
+As \citet{vankov_hazards_2023} emphasizes, switching to a more flexible model
+does not by itself remove researcher degrees of freedom.
+
+\subsection{Scope and limitations}
+
+Several limitations qualify generalization. First, the analysis covers an
+audited convenience corpus rather than a probability sample of the literature.
+One computationally demanding primary input was excluded; this runtime-based
+exclusion could underrepresent difficult fitting problems. Unanalysed inputs
+must not be read as experiments with null effects. Second, earlier eligibility
+decisions can affect the available distribution even when original RT columns
+survive. Previously prepared inputs are inventoried but excluded from this
+primary reanalysis, and known participant-level restrictions are disclosed. Third,
+correct-response Maze data are conditional on an earlier sequence of
+successful decisions. No RT transformation restores regions that were
+never presented or responses that were not saved.
+
+Fourth, the fixed-design Box--Cox profile is a practical screening
+approximation, not optimization of the final mixed-model likelihood.
+Fifth, variance-guided random-effects reduction changes the fitted
+covariance model when preprocessing changes what the design supports.
+Its trace is part of the result. A converged and nonsingular fit is a
+necessary operational acceptance criterion here, not proof that the
+model is a complete account of trial-level dependence or that every
+Gaussian assumption holds.
+
+Finally, the multiverse is finite and investigator-defined. It does not
+cover every possible cutoff, winsorization procedure, residual screen,
+distributional model, or grouping choice. In particular, the two
+logarithms cannot be counted as independent specifications merely to
+increase the apparent size of the analysis. A different set of plausible
+pipelines could yield different numerical proportions. Our aim is a
+reproducible description of the declared decision space, not an estimate of
+the probability of every analysis that a researcher might have performed.
+
+\subsection{Practical advice and recommendations}
+
+The results support transparent specification rather than a universal
+winning cutoff. We recommend the following practices for new reading-time
+studies and secondary analyses.
+
+\begin{enumerate}
+\item \textbf{Define the scientific target before choosing the scale.}
+State whether the hypothesis concerns absolute delay, proportional slowing,
+a factorial interaction on a specified scale, or a distributional feature.
+Choose a primary analysis on that basis, not on the smallest observed
+\(p\) value. Nonlinear alternatives should be described as
+scale-dependent sensitivity analyses, not exact replications of one estimand.
+
+\item \textbf{Specify eligibility separately from outlier screening.}
+Document task errors, post-error handling, missing responses, participant
+restrictions, and source-defined analysis regions. For each RT rule give
+the physical or relative bounds, comparison subset, MAD constant where
+applicable, boundary convention, iteration policy, and order relative
+to transformation. Preserve original RTs and an auditable exclusion flag.
+
+\item \textbf{Declare a limited, justified sensitivity set.}
+Preregister the primary workflow and a scientifically defensible set of
+alternatives where possible. Remove algebraically redundant specifications.
+In this corpus, exclusion rules, especially the 1.5-SD rule, and the inverse
+scale produced the largest inferential changes in their respective
+dimensions. They deserve explicit attention when scientifically plausible;
+comparing natural and base-10 logarithms adds no inferential information.
+The relatively low average disagreement between logarithms and Box--Cox
+does not guarantee equivalence for a particular interaction.
+Do not choose a workflow after seeing which supports the intended account:
+simulation evidence shows that such flexibility can affect significance,
+confidence intervals, and effect-size reporting \citep{vankov_hazards_2023}.
+A transparent multiverse documents uncertainty; it is not a license to
+selectively report the preferred branch.
+
+\item \textbf{Report three forms of stability.}
+Show native-scale estimates, SEs and intervals for the primary model;
+summarize direction and effect magnitudes across alternatives; and distinguish
+threshold crossings from substantial changes in interpretation. A fraction
+of significant workflows is not a substitute for a joint test, a replication,
+or a probability that the effect exists.
+
+\item \textbf{Make model adaptation and reproducibility visible.}
+State the maximal supported random structure and reduction rule, save
+convergence and singularity diagnostics, and show any removed intercepts.
+A nonsingular model is not automatically scientifically adequate. Supply
+compact original-scale inputs, factor mappings, source and region evidence,
+full pipeline outputs, and scripts that regenerate the manuscript numbers
+and figures. Keep already prepared inputs distinct from recoverable
+pre-exclusion RTs, and disclose computational exclusions.
+\end{enumerate}
+
+Together, these practices make the substantive claim, the measurement
+scale, and the effect of analytical choices inspectable. That is the
+practical benefit of this multiverse: not selecting a generally optimal
+preprocessing rule, but showing which conclusions require a more
+qualified account of how the data were analysed.
+
+\section{Reproducibility and declarations}
+
+The source-specific adapters, multiverse runner, model-reduction audit,
+coefficient outputs, conditional contrasts, and figure generators accompany
+the manuscript. Original source files are not overwritten. Original-data
+hashes identify the exact local inputs, and all regenerated outputs are
+written separately. The full run is deterministic apart from numerical
+optimization; the publication-cluster bootstrap uses a fixed random seed.
+Compact primary RDS inputs permit model reproduction without searching
+archives again. Completed checkpoints permit immediate regeneration of tables
+and figures without refitting. \texttt{README.md} lists the extraction,
+fitting, verification, and manuscript-build commands. Runtime depends strongly
+on input and covariance complexity; some region jobs required many hours%
+\input{generated/runtime_footnote.tex}.
+
+This study reanalyses existing data and recruited no new participants.
+Source citations and host identifiers are reported in the dataset tables.
+Funding and competing-interest declarations require author confirmation
+before submission; no declaration is inferred from the reanalysis itself.
+
+\clearpage
+\onecolumn
+\unsetvruler
+\begin{landscape}
+\section*{Dataset inventory}
+\input{generated/dataset_tables.tex}
+\end{landscape}
+\clearpage
+\twocolumn
+\linenoon
+\bibliography{multiverse_refs}

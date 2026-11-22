@@ -1,0 +1,4048 @@
+[
+  {
+    "dataset": "fujita2021_e1",
+    "citation": "fujita_parsing_2021",
+    "label": "E1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2021_e1.rds",
+    "source": "preprocessing_robustness/aw8t3-fujita_parsing_2021/ex1_raw_data_rt.csv",
+    "sha256": "0d30013e65be168c9d92fbb9ab26fae9e03d7af3a9eef27bca974237b02ef607",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "ambiguous",
+        "unambiguous"
+      ],
+      "F2": [
+        "match",
+        "mismatch"
+      ]
+    },
+    "design": "2x2",
+    "participants": 80,
+    "items": 24,
+    "observations": 1920,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1920
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "ex1_code_for_raw_data.R",
+        "definition": "Source-defined critical label/position: {'6': 'critical'}"
+      }
+    },
+    "skewness": 7.3639,
+    "original_removal": "100--10000 ms",
+    "original_transform": "natural log",
+    "eligibility": "Raw row blocks reconstructed exactly as in author script; no RT trimming",
+    "source_script": "ex1_code_for_raw_data.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "b7812c0f9fbe2d66c15b03150925fe3e",
+    "region_fingerprints": {
+      "critical": "d4b467dd337c8182b27ff60960c515ff"
+    }
+  },
+  {
+    "dataset": "fujita2021_e2",
+    "citation": "fujita_parsing_2021",
+    "label": "E2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2021_e2.rds",
+    "source": "preprocessing_robustness/aw8t3-fujita_parsing_2021/ex2_raw_data.csv",
+    "sha256": "f5d1108a54c5b50ff12bad8b3d89e27f55b2b5b875e7d7336c60b7b275d8e77f",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "ambiguous",
+        "unambiguous"
+      ],
+      "F2": [
+        "match",
+        "mismatch"
+      ]
+    },
+    "design": "2x2",
+    "participants": 80,
+    "items": 24,
+    "observations": 1920,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1920
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "ex2_code_for_raw_data.R",
+        "definition": "Source-defined critical label/position: {'4': 'critical'}"
+      }
+    },
+    "skewness": 6.9897,
+    "original_removal": "100--10000 ms",
+    "original_transform": "natural log",
+    "eligibility": "Raw row blocks reconstructed exactly as in author script; no RT trimming",
+    "source_script": "ex2_code_for_raw_data.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "85302c212fff174bbcfde1154b28b389",
+    "region_fingerprints": {
+      "critical": "4fbcb6eb4eb2d085bddbc41c279af1f1"
+    }
+  },
+  {
+    "dataset": "fujita_memory_2024_e1",
+    "citation": "fujita_memory_2024",
+    "label": "E1",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_memory_2024_e1.rds",
+    "source": "preprocessing_robustness/nhc2p-fujita_memory_2024/Ex1CleanData.csv",
+    "sha256": "f009c2177b6e636183a8fe25c76caa59ecb264311ae23467a59651e9beacaffd",
+    "factors": {
+      "F1": "grammaticality",
+      "F2": "distractor"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ],
+      "F2": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2x2",
+    "participants": 640,
+    "items": 24,
+    "observations": 27234,
+    "invalid_or_missing": 3486,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 13699,
+      "postcritical": 13535
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCodeBF.R; AnalysisCodeEffectEstimate.R",
+        "definition": "Source-defined critical label/position: {'critical': 'critical', 'spillover': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "nhc2p-fujita_memory_2024_Fujita - 2024 - Memory Retrieval in Online Sentenc.txt",
+        "main_effect": "Overall grammaticality effect at the spillover region; distinct from the nested interference contrasts.",
+        "original_numbered_passages": [
+          "646: Spillover Region                                                                                                               online language comprehension adheres to structural\n647:                                                                                                                                constraints. Importantly, the results provided evidence of\n648: The results at the spillover region closely mirror those at the                                                                facilitatory interference. However, there was no evidence\n649: critical region. The 95% Crl for the grammaticality effect is                                                                  of inhibitory interference. This pattern of interference\n650: \n651: Computational Brain & Behavior (2024) 7:457\u2013478                                                                                             467\n652: \n653: \n654: \n655: \n656: m                                                                          m\n657: \n658: e                                                                          e\n659: \n660: \n661: \n662: \n663: m                                                                          m\n664: \n665: e                                                                          e"
+        ]
+      }
+    },
+    "skewness": 38.9879,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCodeBF.R; AnalysisCodeEffectEstimate.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "2f24a9c8aa6810bb3b873f64b6546191",
+    "region_fingerprints": {
+      "critical": "bf3ed9196af5ecf76f292d57712e5d91",
+      "postcritical": "312cef83b7b0a63623acf1af923c31f1"
+    }
+  },
+  {
+    "dataset": "fujita_memory_2024_e2",
+    "citation": "fujita_memory_2024",
+    "label": "E2",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_memory_2024_e2.rds",
+    "source": "preprocessing_robustness/nhc2p-fujita_memory_2024/Ex2CleanData.csv",
+    "sha256": "0cfa01df982cde446a739b48da0b49c5e136a3406ddf4d632c0314db601f1d1e",
+    "factors": {
+      "F1": "grammaticality",
+      "F2": "distractor"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ],
+      "F2": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2x2",
+    "participants": 640,
+    "items": 24,
+    "observations": 27160,
+    "invalid_or_missing": 3560,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 13673,
+      "postcritical": 13487
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCodeBF.R; AnalysisCodeEffectEstimate.R",
+        "definition": "Source-defined critical label/position: {'critical': 'critical', 'spillover': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "nhc2p-fujita_memory_2024_Fujita - 2024 - Memory Retrieval in Online Sentenc.txt",
+        "main_effect": "Overall grammaticality effect at spillover, 95% CrI [19,34] ms.",
+        "original_numbered_passages": [
+          "780: object positions in memory retrieval, Engelmann et al. (2019)       Spillover Region\n781: suggest that larger interference effects arise from subject\n782: positions relative to object positions. In contrast, Arnett and     The results at the spillover region are similar to those at the\n783: Wagers (2017) argue that such effects are limited to cases          critical region. The estimate of the grammaticality effect\n784: where memory retrieval targets subject positions. Given that        shows a positive sign (95% Crl [19, 34] ms), suggesting mis-\n785: the associates of floating quantifiers are not restricted to sub-   match effects. The 95% Crl for the interaction effect is [8,\n786: ject positions, these studies predict either that (7a\u2013d) should     44] ms. The Bayes factor analysis provides the extremely\n787: elicit smaller interference effects than (6a\u2013d), or that similar    strong evidence for the interaction effect."
+        ]
+      }
+    },
+    "skewness": 48.8557,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCodeBF.R; AnalysisCodeEffectEstimate.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "53d66aa3fb6d76b25b97526346d49b21",
+    "region_fingerprints": {
+      "critical": "6fa6a10c53f80a44ff6b308957e6cec1",
+      "postcritical": "1f511539e638046d5baedd2c51cea7dd"
+    }
+  },
+  {
+    "dataset": "fujita_active_2026_e1",
+    "citation": "fujita_active_2026",
+    "label": "E1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_active_2026_e1.rds",
+    "source": "preprocessing_robustness/qfnsg-fujita_active_2026/Ex1CleanData.csv",
+    "sha256": "316a1d669bfdb1303318050389e09623f4c8bdf45297daaa848d515bea817230",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "control"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 212,
+    "items": 24,
+    "observations": 9242,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4621,
+      "postcritical": 4621
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R",
+        "definition": "Source-defined critical label/position: {'Disambiguating region': 'critical', 'Post-disambiguating region': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "qfnsg-fujita_active_2026_Fujita and Yoshida - 2026 - Active dependency form.txt",
+        "main_effect": "Ambiguity main effect at post-disambiguation, p<.001.",
+        "original_numbered_passages": [
+          "375: \n376:                                                                          Post\u2011disambiguating region (\u201chave\u201d)\n377: Results\n378:                                                                          The post-disambiguating region showed a similar pat-\n379: The mean accuracy rate for comprehension questions (exper-               tern. The model showed garden-path effects (95% CI [25,\n380: imental and filler) was 87% (range: 71\u201399), suggesting that              40] ms, p <.001) and an interaction between ambiguity\n381: participants generally paid attention to the task. Log-trans-            and dependency (95% CI [\u201315, \u20133] ms, p =.003). Fol-"
+        ]
+      }
+    },
+    "skewness": 15.9101,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "0dd32abd537d0dc35506caede5d10cdf",
+    "region_fingerprints": {
+      "critical": "671a833fd7e3e9d9c31912220bc093c8",
+      "postcritical": "57b48587886e080dbb02930f0d9d6d05"
+    }
+  },
+  {
+    "dataset": "fujita_active_2026_e2",
+    "citation": "fujita_active_2026",
+    "label": "E2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_active_2026_e2.rds",
+    "source": "preprocessing_robustness/qfnsg-fujita_active_2026/Ex2CleanData.csv",
+    "sha256": "5165ea8b4547ce8816b957fda45c5c8f98bd604e8dc5e69d281a5368830ba816",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "wh"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 412,
+    "items": 24,
+    "observations": 17934,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 8967,
+      "postcritical": 8967
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R",
+        "definition": "Source-defined critical label/position: {'Disambiguating region': 'critical', 'Post-disambiguating region': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "qfnsg-fujita_active_2026_Fujita and Yoshida - 2026 - Active dependency form.txt",
+        "main_effect": "Ambiguity main effect at post-disambiguation, p<.001.",
+        "original_numbered_passages": [
+          "490: \n491: Post\u2011disambiguating region (\u201chave\u201d)                                         Discussion\n492: \n493: As in the disambiguating region, a garden-path effect was                   Experiment 2 showed a garden-path effect in the ambiguous\n494: observed (95% CI [36, 49] ms, p <.001). The overall reading                 +WH\u2013PRO condition, replicating Experiment 1\u2019s finding\n495: time pattern was similar to that of the disambiguating region,              that active trace search does not block the object analysis.\n496: but the evidence for the ambiguity-by-dependency interac-                   Crucially, Experiment 2 also revealed a reduced revision"
+        ]
+      }
+    },
+    "skewness": 6.7077,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "dc93917164a6f6fc000b15934b1e61b0",
+    "region_fingerprints": {
+      "critical": "8efc5327842dd000d7a658389fa63829",
+      "postcritical": "4aa46cdba8c3c1f6afa88d23f4b84c6e"
+    }
+  },
+  {
+    "dataset": "fujita_active_2026_e3",
+    "citation": "fujita_active_2026",
+    "label": "E3",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_active_2026_e3.rds",
+    "source": "preprocessing_robustness/qfnsg-fujita_active_2026/Ex3CleanData.csv",
+    "sha256": "dce1aa2c3ce9b87360d84361277054d102a0a550d7f7cf38b197fb0535afb9bb",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "dependency"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 212,
+    "items": 24,
+    "observations": 9324,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4662,
+      "postcritical": 4662
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R",
+        "definition": "Source-defined critical label/position: {'Disambiguating region': 'critical', 'Post-disambiguating region': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "qfnsg-fujita_active_2026_Fujita and Yoshida - 2026 - Active dependency form.txt",
+        "main_effect": "Ambiguity main effect at post-disambiguation, p<.001.",
+        "original_numbered_passages": [
+          "570: Post\u2011disambiguating region (\u201chave\u201d)                                     ency effect did not interact with ambiguity, it suggests\n571:                                                                         that processing costs increased when PRO was present in\n572: Reading times were longer in the ambiguous conditions                   both ambiguous and unambiguous sentences. This pattern\n573: than in the unambiguous conditions, indicating a garden-                aligns with Experiment 1, in which reading times were\n574: path effect (95% CI [33, 48] ms, p <.001). Reading times                longer in the unambiguous +WH+PRO conditions than\n575: \n576: Memory & Cognition"
+        ]
+      }
+    },
+    "skewness": 7.9775,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "5fb0d050e544e5b2165d31a2887c3a55",
+    "region_fingerprints": {
+      "critical": "95492fbfc38065dbf3e7f0f7283f8053",
+      "postcritical": "e611c7ab439bb81bd09b9638ff5a63b2"
+    }
+  },
+  {
+    "dataset": "fujita_real-time_2026_e1",
+    "citation": "fujita_real-time_2026",
+    "label": "E1",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_real-time_2026_e1.rds",
+    "source": "preprocessing_robustness/t42b6-fujita_real-time_2026/Ex1CleanData.csv",
+    "sha256": "1ba722d997d1e336977f1f42c577200d74c89feab8cf40d84f4ca3db2e799a59",
+    "factors": {
+      "F1": "interpretation",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 360,
+    "items": 24,
+    "observations": 7244,
+    "invalid_or_missing": 1396,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 7244
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R: RTc construction and ellipsis-region models",
+        "definition": "Sum of original RT at segments [10, 11]; both components required.",
+        "correction": "Earlier extraction incorrectly used Too region alone."
+      }
+    },
+    "skewness": 21.0296,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "2f7b6e919fd2d6a1437d0b09c0fb23a6",
+    "region_fingerprints": {
+      "critical": "34dcde2fb815a7fece6e249fcdf09386"
+    }
+  },
+  {
+    "dataset": "fujita_real-time_2026_e2",
+    "citation": "fujita_real-time_2026",
+    "label": "E2",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_real-time_2026_e2.rds",
+    "source": "preprocessing_robustness/t42b6-fujita_real-time_2026/Ex2CleanData.csv",
+    "sha256": "759a18e9223cd7f65dc9098d93b22784884b32b75c2f10caad9d2f5e99a4f555",
+    "factors": {
+      "F1": "interpretation",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 160,
+    "items": 24,
+    "observations": 6409,
+    "invalid_or_missing": 1271,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3224,
+      "postcritical": 3185
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R: RTc construction and ellipsis-region models",
+        "definition": "Sum of original RT at segments [10, 11]; both components required.",
+        "correction": "Earlier extraction incorrectly used Too region alone."
+      },
+      "postcritical": {
+        "source": "t42b6-fujita_real-time_2026_Fujita and Yoshida - 2026 - Real-time resolution o.txt",
+        "main_effect": "Experiment 2 interpretation main effect at spillover, t=2.40; not the E1 null or E3 interaction.",
+        "original_numbered_passages": [
+          "387: Spillover region (\u201call\u201d)                                                   scratched herself\u2026\u201d, where the relative clause \u201cwho scratched\n388:                                                                            herself\u201d can modify either the first nominal (\u201cThe maid\u2026\u201d)\n389: There was a main effect of interpretation (95% CI [4, 35] ms,              or the second nominal (\u201cthe princess\u201d). These sentences were\n390: t = 2.40), with longer reading times in the sloppy-interpre-               compared with two types of locally ambiguous sentences: one\n391: tation conditions than in the strict-interpretation conditions.            where the relative clause modified the first nominal due to gen-\n392: No clear effects were found for gender (95% CI [\u221222, 9] ms,                der agreement (e.g., \u201cThe maid of the prince who scratched\n393: t = \u20130.82) or the interaction (95% CI [\u22129, 19] ms, t = 0.73).              herself\u2026\u201d) and another where it modified the second nominal\n394:                                                                            (\u201cThe son of the princess who scratched herself\u2026\u201d). Some"
+        ]
+      }
+    },
+    "skewness": 34.288,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "7e9f17a97fca374dd76ac12956c08f36",
+    "region_fingerprints": {
+      "critical": "de7c827f0c0177619f3a9fad533131c1",
+      "postcritical": "4e7d2217f26d16e0391c68b7deb054c3"
+    }
+  },
+  {
+    "dataset": "fujita_real-time_2026_e3",
+    "citation": "fujita_real-time_2026",
+    "label": "E3",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita_real-time_2026_e3.rds",
+    "source": "preprocessing_robustness/t42b6-fujita_real-time_2026/Ex3CleanData.csv",
+    "sha256": "2eda07b72f670884ef955b348fc8d63581137803cbfc5252cfeb18dcc86ba688",
+    "factors": {
+      "F1": "interpretation",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 308,
+    "items": 24,
+    "observations": 7392,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 7392
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R: RTc construction and ellipsis-region models",
+        "definition": "Sum of original RT at segments [11, 12]; both components required.",
+        "correction": "Earlier extraction incorrectly used Too region alone."
+      }
+    },
+    "skewness": 15.4895,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "aa99a9fab720da0d894c9b93542fb300",
+    "region_fingerprints": {
+      "critical": "5e6e318f138d9d45482a8fb71c8d95cf"
+    }
+  },
+  {
+    "dataset": "fujita2025_maze",
+    "citation": "fujita_l-maze_2025",
+    "label": "Maze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2025_maze.rds",
+    "source": "preprocessing_robustness/kftg7-fujita_l-maze_2025/LmazeCleanData.csv",
+    "sha256": "3387e1d5d34af4cdb469d1a1b151ebbe0381b2a9933f356129e5180eddae5719",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 60,
+    "items": 24,
+    "observations": 1297,
+    "invalid_or_missing": 143,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1297
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R",
+        "definition": "Source-defined critical label/position: {'Disambiguating region': 'critical'}"
+      }
+    },
+    "skewness": 3.8935,
+    "original_removal": "100--10000 ms after supplied cleaning",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "04c66ca7c4a1acc6dade7287a0075647",
+    "region_fingerprints": {
+      "critical": "e26786abdb93d3b253c4e325690b0278"
+    }
+  },
+  {
+    "dataset": "fujita2025_spr",
+    "citation": "fujita_l-maze_2025",
+    "label": "SPR",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2025_spr.rds",
+    "source": "preprocessing_robustness/kftg7-fujita_l-maze_2025/SPRCleanData.csv",
+    "sha256": "b41e52149d409fc9ffe2e0c38d32de3f58f196c836502c8042de9183891f456d",
+    "factors": {
+      "F1": "ambiguity",
+      "F2": "gender"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 60,
+    "items": 24,
+    "observations": 2880,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1440,
+      "postcritical": 1440
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R",
+        "definition": "Source-defined critical label/position: {'Disambiguating region': 'critical', 'Post-disambiguating region': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "kftg7-fujita_l-maze_2025_ModelOutputs.txt",
+        "main_effect": "SPR post-disambiguating ambiguity main effect, t=5.68; do not generalize this to L-maze.",
+        "original_numbered_passages": [
+          "82:                          Gender\n83: Formula: lmer(formula = log(RT) ~ ambiguity + gender + ambiguity:gender + ((1 |\n84: subject) + (0 + ambiguity | subject) + (0 + gender |  subject)) + ((1 | item) + (0 + gender |\n85: item) + (0 + gender:ambiguity | item)), data = spr[spr$region == \"Disambiguating region\",\n86: ], control = lmerControl(optimizer = \"bobyqa\"))\n87: \n88: \n89: 6. SPR: Post-disambiguating region\n90:                          Effect       Estimate        SE            t\n91: \n92:                          Intercept        5.83       0.03     167.60\n93: \n94:                          Ambiguit\n95:                                           0.06       0.01       5.68\n96:                          y\n97: \n98:                          Gender           0.01       0.01       1.23\n99: "
+        ]
+      }
+    },
+    "skewness": 5.5401,
+    "original_removal": "100--10000 ms after supplied cleaning",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "5ed29ab0d347a092e54228ea42b75cc7",
+    "region_fingerprints": {
+      "critical": "5be86102b5440e5fa15837c35a6e41a8",
+      "postcritical": "be3a17aebae6805503ab792a19eb99ee"
+    }
+  },
+  {
+    "dataset": "fujita2025_active",
+    "citation": "fujita_active_2025",
+    "label": "E1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2025_active.rds",
+    "source": "preprocessing_robustness/9dp6e-fujita_active_2025/CleanData.csv",
+    "sha256": "451e1800540a5417d36cbb287b15ebed2a6b61a0e9db2bed9abc0471150268bc",
+    "factors": {
+      "F1": "dependency",
+      "F2": "number"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ],
+      "F2": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2x2",
+    "participants": 444,
+    "items": 24,
+    "observations": 21312,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 10656,
+      "postcritical": 10656
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisCode.R",
+        "definition": "Source-defined critical label/position: {'Critical region': 'critical', 'Spillover region': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "9dp6e-fujita_active_2025_Fujita - 2025 - Active dependency formation, maint.txt",
+        "main_effect": "Maintenance main effect at spillover, t=-2.36, interval excludes zero.",
+        "original_numbered_passages": [
+          "205: models also included varying intercepts and slopes for\n206: participants and materials.                                      Spillover region\n207:                                                                  Reading times were shorter in the maintenance con\u00ad\n208: Results                                                          ditions than in the no maintenance conditions (95%\n209: The average comprehension accuracy was 83% (range                CI [\u221214, \u22121] ms, t = \u22122.36), and there were no clear\n210: 71\u201396%). Figure 2 shows log-transformed reading                  signs of the other effects (distractor: 95% CI [\u22126, 5]\n211: times, and Figure 3 shows 95% compatibility intervals            ms, t = \u22120.29; interaction: 95% CI [\u221218, 4] ms, t ="
+        ]
+      }
+    },
+    "skewness": 62.8742,
+    "original_removal": "Author-prepared input; see source-script audit",
+    "original_transform": "natural log",
+    "eligibility": "Original RT column retained before author-script RT exclusions",
+    "source_script": "AnalysisCode.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "69fcff462ae555f96d3cb22d4f6e43b3",
+    "region_fingerprints": {
+      "critical": "2700d96a8008d650460767fafbe0f81c",
+      "postcritical": "0608b381ac7523a03b40c99a0e80d3a0"
+    }
+  },
+  {
+    "dataset": "tucker2021_e1",
+    "citation": "tucker_attraction_2021",
+    "label": "E1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e1.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment1.csv",
+    "sha256": "3a593418f1a8a1b864991b87beae41ebe5bb7bd8e38f26fe8b95525121f0dea2",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match"
+    },
+    "levels": {
+      "F1": [
+        "Grammatical",
+        "Ungrammatical"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ]
+    },
+    "design": "2x2",
+    "participants": 104,
+    "items": 48,
+    "observations": 4106,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4106
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 01-Experiment1-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 41.2146,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 01-Experiment1-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "e9304eb542e375792ccb64be54cd54cb",
+    "region_fingerprints": {
+      "critical": "e7272053c65c99a847705d620aa7afde"
+    }
+  },
+  {
+    "dataset": "tucker2021_e2a",
+    "citation": "tucker_attraction_2021",
+    "label": "E2a",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e2a.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment2.csv",
+    "sha256": "6be2e3df26bacfacc19716e80484961377c1e5d4c7ea09dbeb51d095c9251799",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "SubjGen"
+    },
+    "levels": {
+      "F1": [
+        "Gram",
+        "Ungram"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Fem",
+        "Masc"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 128,
+    "items": 48,
+    "observations": 6124,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 6124
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 02-Experiment2-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 3.5102,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 02-Experiment2-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "247ac2db27d6172212a28f1dd3e93ba1",
+    "region_fingerprints": {
+      "critical": "8cf02604d1c4907493a533fec7971446"
+    }
+  },
+  {
+    "dataset": "tucker2021_e2b",
+    "citation": "tucker_attraction_2021",
+    "label": "E2b",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e2b.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment2.csv",
+    "sha256": "6be2e3df26bacfacc19716e80484961377c1e5d4c7ea09dbeb51d095c9251799",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "SubjGen"
+    },
+    "levels": {
+      "F1": [
+        "Gram",
+        "Ungram"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Fem",
+        "Masc"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 202,
+    "items": 48,
+    "observations": 9635,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 9635
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 02-Experiment2-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 5.4225,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 02-Experiment2-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "b38e3292a71fce00a3060ee57f37a6d7",
+    "region_fingerprints": {
+      "critical": "57eddf63b68f79003d0ff0bc1a544768"
+    }
+  },
+  {
+    "dataset": "tucker2021_e3",
+    "citation": "tucker_attraction_2021",
+    "label": "E3",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e3.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment3.csv",
+    "sha256": "19e3da59cec0b2020ad7aa27e313e9b125ed45df3fe85cc771b782128eeaf4ae",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "Ambiguity"
+    },
+    "levels": {
+      "F1": [
+        "Grammatical",
+        "Ungrammatical"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Ambiguous",
+        "Unambiguous"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 110,
+    "items": 48,
+    "observations": 4583,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4583
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 03-Experiment3-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 11.4128,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 03-Experiment3-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "c2c7f0ffea469e58a1403dafe9851f80",
+    "region_fingerprints": {
+      "critical": "c25e23280ca05e731983c447ed671f2a"
+    }
+  },
+  {
+    "dataset": "tucker2021_e4a",
+    "citation": "tucker_attraction_2021",
+    "label": "E4a",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e4a.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment4.csv",
+    "sha256": "7b8f41253fc3e9019b78f812270cb07248df526e945b816125649373038327b0",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "SubjNum"
+    },
+    "levels": {
+      "F1": [
+        "Gram",
+        "Ungram"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Pl",
+        "Sg"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 112,
+    "items": 54,
+    "observations": 6048,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 6048
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 04-Experiment4-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 6.5256,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 04-Experiment4-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "6e373a87b4b5a493a5db325e74b2b4e6",
+    "region_fingerprints": {
+      "critical": "b24e979f916e24d3e582d19e669e02a6"
+    }
+  },
+  {
+    "dataset": "tucker2021_e4b",
+    "citation": "tucker_attraction_2021",
+    "label": "E4b",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e4b.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment4.csv",
+    "sha256": "7b8f41253fc3e9019b78f812270cb07248df526e945b816125649373038327b0",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "SubjNum"
+    },
+    "levels": {
+      "F1": [
+        "Gram",
+        "Ungram"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Pl",
+        "Sg"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 218,
+    "items": 54,
+    "observations": 11772,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 11772
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 04-Experiment4-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 6.5451,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 04-Experiment4-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "0d2b52e368ed9830a863cdd63f7d838b",
+    "region_fingerprints": {
+      "critical": "f543a14a916378d6790ccfba3131e50b"
+    }
+  },
+  {
+    "dataset": "tucker2021_e5a",
+    "citation": "tucker_attraction_2021",
+    "label": "E5a",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e5a.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment5.csv",
+    "sha256": "01b9f53ed30061b7129e5151a0832a60056737b55556d94750918415ec0a2085",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "SubjPhi"
+    },
+    "levels": {
+      "F1": [
+        "Gram",
+        "Ungram"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Gend",
+        "Num"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 200,
+    "items": 54,
+    "observations": 10754,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 10754
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 05-Experiment5-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 73.3141,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 05-Experiment5-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "6a3564b6513e5875928ab66e81a05e93",
+    "region_fingerprints": {
+      "critical": "a28132c3b7cbdfb408dd9af26e397c6e"
+    }
+  },
+  {
+    "dataset": "tucker2021_e5b",
+    "citation": "tucker_attraction_2021",
+    "label": "E5b",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tucker2021_e5b.rds",
+    "source": "preprocessing_robustness/figshare-tucker_attraction_2021/experiment5.csv",
+    "sha256": "01b9f53ed30061b7129e5151a0832a60056737b55556d94750918415ec0a2085",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Match",
+      "F3": "SubjPhi"
+    },
+    "levels": {
+      "F1": [
+        "Gram",
+        "Ungram"
+      ],
+      "F2": [
+        "Match",
+        "NoMatch"
+      ],
+      "F3": [
+        "Gend",
+        "Num"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 100,
+    "items": 54,
+    "observations": 5400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "AnalysisScripts.zip: 05-Experiment5-Analysis-Frontiers.R",
+        "definition": "Source-defined critical label/position: {'Verb': 'critical'}"
+      }
+    },
+    "skewness": 51.0156,
+    "original_removal": "By-region 1% winsorization (article)",
+    "original_transform": "untransformed descriptives",
+    "eligibility": "Original RT column, before winsorization; experimental regions only",
+    "source_script": "AnalysisScripts.zip: 05-Experiment5-Analysis-Frontiers.R",
+    "legacy_critical_unchanged": false,
+    "input_md5": "877371ef698d1e50ba8c432fd2a277bd",
+    "region_fingerprints": {
+      "critical": "332cd901ebecceeee70af7a15a5f95e3"
+    }
+  },
+  {
+    "dataset": "orth2025_maze",
+    "citation": "orth_positive_2025",
+    "label": "E3",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/orth2025_maze.rds",
+    "source": "preprocessing_robustness/czq8x-orth_positive_2025/Formatted_Data_Maze.csv",
+    "sha256": "609729559b55ea60644f3539f4ca757821eb482348a2defdf975f1b6a2567ee7",
+    "factors": {
+      "F1": "polarity",
+      "F2": "negation"
+    },
+    "levels": {
+      "F1": [
+        "NPI-ever",
+        "PPI-still"
+      ],
+      "F2": [
+        "BothThe",
+        "MatrixNo",
+        "MatrixThe"
+      ]
+    },
+    "design": "2x3",
+    "participants": 60,
+    "items": 36,
+    "observations": 1727,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1727
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Stats_Maze.R",
+        "definition": "Source-defined critical label/position: {'10': 'critical'}"
+      }
+    },
+    "skewness": 36.5562,
+    "original_removal": "100--10000 ms; three unprepared trials removed (script)",
+    "original_transform": "natural log",
+    "eligibility": "Original RT before script's RT bounds; correct choices",
+    "source_script": "Stats_Maze.R",
+    "legacy_critical_unchanged": true,
+    "input_md5": "a0d83a45251a1a76ab3bb15d77b3cf4d",
+    "region_fingerprints": {
+      "critical": "5e24e373fd7d107c08a1645c17fb1254"
+    }
+  },
+  {
+    "dataset": "saul2025_do",
+    "citation": "saul_interference_2025",
+    "label": "DO",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/saul2025_do.rds",
+    "source": "preprocessing_robustness/hdzsr-saul_interference_2025/DO_SPR.csv",
+    "sha256": "39dc1cd4af91951600868dfa8bcfc55bc854d0d3d8d8731901e9cad5c06b656f",
+    "factors": {
+      "F1": "Distractor",
+      "F2": "Resumption"
+    },
+    "levels": {
+      "F1": [
+        "match",
+        "mismatch"
+      ],
+      "F2": [
+        "RP",
+        "gap"
+      ]
+    },
+    "design": "2x2",
+    "participants": 47,
+    "items": 32,
+    "observations": 1504,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1504
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "DO_SPR.qmd",
+        "definition": "Source-defined critical label/position: {'8': 'critical'}"
+      }
+    },
+    "skewness": 3.9979,
+    "original_removal": ">100 ms; participant mean+2.5 SD winsorization",
+    "original_transform": "natural log",
+    "eligibility": "Original trial RT; author exclusions of participants 24/32 for RT-based reasons held fixed",
+    "source_script": "DO_SPR.qmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "4af56760d18dc1f4723bdf7c02b2cf81",
+    "region_fingerprints": {
+      "critical": "d11541eac2edc10ce9818c3146ec6da0"
+    }
+  },
+  {
+    "dataset": "keshev2024_e1",
+    "citation": "keshev_representation_2024",
+    "label": "E1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/keshev2024_e1.rds",
+    "source": "preprocessing_robustness/qz93x-keshev_representation_2024/Experiment 1/SPR-attraction.csv",
+    "sha256": "b0453ffd6bcb6af69be42dad4395118fdfe709fca49d3e8952b525de9fda7fe8",
+    "factors": {
+      "F1": "verb_cue",
+      "F2": "distractor"
+    },
+    "levels": {
+      "F1": [
+        "gram",
+        "none",
+        "ungram"
+      ],
+      "F2": [
+        "match",
+        "mismatch"
+      ]
+    },
+    "design": "3x2",
+    "participants": 72,
+    "items": 30,
+    "observations": 4313,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 2156,
+      "postcritical": 2157
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Experiment 1/E1_analysis.Rmd",
+        "definition": "Source-defined critical label/position: {'refl': 'critical', 'spill': 'postcritical'}"
+      },
+      "postcritical": {
+        "source": "qz93x-keshev_representation_2024_Keshev and Meltzer-Asscher - 2024 - The representa.txt",
+        "main_effect": "The original paper explicitly reports three main effects at the spillover region.",
+        "original_numbered_passages": [
+          "395: matical verbal agreement conditions (henceforth the grammatical verb                  with both models, as both predict interactions, in different directions.\n396: factor), and the other contrasts no verbal agreement conditions with                  The model also detected three main effects at the spillover region: a\n397: ungrammatical verbal agreement conditions (henceforth the ungram\u00ad                     main effect of the ungrammatical verb factor, such that RTs were shorter\n398: matical verb factor). For the distractor manipulation we used sum                     following ungrammatical verbs than following unmarked ones; a main\n399: coding. However, it should be noted that due to the treatment coding of               effect of the grammatical verb factor, such that RTs were longer\n400: the verbal agreement factor, the distractor main effect is a simple effect,           following grammatical verbs than following non-inflected ones; and a\n401: evaluated only on the baseline (no verbal agreement) conditions. To                   main effect of distractor-subject match, reflecting reflexive attraction in\n402: detect reflexive attraction effects in the other verbal agreement condi\u00ad              the no verbal agreement conditions.\n403: tions, an additional nested-contrasts model was fitted. This model was                    The nested-contrasts model suggested that the reflexive attraction\n404: fitted for the same dataset as the main effect model, but evaluated                   effect was supported only in the no verbal agreement conditions (pos\u00ad\n405: pairwise contrasts, comparing the two levels of the distractor factor                 terior mean [CrI]: 23 ms [5, 40]). The size of this attraction effect is\n406: within each verbal agreement condition pair. Similar results were ob\u00ad                 compatible with a recent large-scale study on reflexive attraction (Ja\u0308ger"
+        ]
+      }
+    },
+    "skewness": 6.6402,
+    "original_removal": "Adjusted trim column supplied; E1 bounds not specified in loaded script",
+    "original_transform": "natural log",
+    "eligibility": "Original RT retained separately from adjusted trim",
+    "source_script": "Experiment 1/E1_analysis.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "fa6463f62e59074e10e7cfb5548ba232",
+    "region_fingerprints": {
+      "critical": "70b6cf7a365b7101bc5cbc60995518ed",
+      "postcritical": "ae05e5747de9805c13e157ba608d00ad"
+    }
+  },
+  {
+    "dataset": "keshev2024_e2",
+    "citation": "keshev_representation_2024",
+    "label": "E2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/keshev2024_e2.rds",
+    "source": "preprocessing_robustness/qz93x-keshev_representation_2024/Experiment 2/SPR-grammaticality.csv",
+    "sha256": "0d08ff6d94c7fcda9b1e390e1c66ee73f35f589ef3e465cb01b7c4d7fc234475",
+    "factors": {
+      "F1": "SV_agreement",
+      "F2": "VR_agreement"
+    },
+    "levels": {
+      "F1": [
+        "SVmatch",
+        "SVmismatch"
+      ],
+      "F2": [
+        "VRmatch",
+        "VRmismatch"
+      ]
+    },
+    "design": "2x2",
+    "participants": 53,
+    "items": 28,
+    "observations": 1484,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1484
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Experiment 2/E2_analysis.Rmd",
+        "definition": "Source-defined critical label/position: {'refl': 'critical'}"
+      }
+    },
+    "skewness": 4.9489,
+    "original_removal": "120 ms minimum; participant mean+2.5 SD winsorization",
+    "original_transform": "natural log",
+    "eligibility": "Original RT retained separately from adjusted trim",
+    "source_script": "Experiment 2/E2_analysis.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "19ba56b12fd4e9c629c70ada89114865",
+    "region_fingerprints": {
+      "critical": "067b6e143d92babd7e5bd851a1a29c79"
+    }
+  },
+  {
+    "dataset": "boyce2020_spr",
+    "citation": "boyce_maze_2020",
+    "label": "SPR",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/boyce2020_spr.rds",
+    "source": "preprocessing_robustness/github-boyce_maze_2020/experiment/Data/Processed/spr.rds",
+    "sha256": "3c45f6f572bae696e21381b811dc59ca8971b21469dcc888a7c49ade347f4611",
+    "factors": {
+      "F1": "type"
+    },
+    "levels": {
+      "F1": [
+        "relative_high",
+        "relative_low"
+      ]
+    },
+    "design": "2",
+    "participants": 32,
+    "items": 24,
+    "observations": 756,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 756
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment/Code/results.Rmd",
+        "definition": "Source-defined critical label/position: {'0': 'critical'}"
+      }
+    },
+    "skewness": 7.8501,
+    "original_removal": "Positive, recorded RT; correct Maze selections; SPR accuracy >.8",
+    "original_transform": "natural log",
+    "eligibility": "Original positive RT, author-native eligibility, relative-clause source-label join",
+    "source_script": "experiment/Code/results.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "aed8a03762e6fe8c459176d51095a7dd",
+    "region_fingerprints": {
+      "critical": "37509af262aceb0fa07588ba58485698"
+    }
+  },
+  {
+    "dataset": "boyce2020_l_maze",
+    "citation": "boyce_maze_2020",
+    "label": "L-maze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/boyce2020_l_maze.rds",
+    "source": "preprocessing_robustness/github-boyce_maze_2020/experiment/Data/Processed/l_maze.rds",
+    "sha256": "d38f87b3c643ac46b33272ed03dcbc22af97667a8ba1c3d806eed9984003099c",
+    "factors": {
+      "F1": "type"
+    },
+    "levels": {
+      "F1": [
+        "relative_high",
+        "relative_low"
+      ]
+    },
+    "design": "2",
+    "participants": 40,
+    "items": 24,
+    "observations": 719,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 719
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment/Code/results.Rmd",
+        "definition": "Source-defined critical label/position: {'0': 'critical'}"
+      }
+    },
+    "skewness": 20.7351,
+    "original_removal": "Positive, recorded RT; correct Maze selections; SPR accuracy >.8",
+    "original_transform": "natural log",
+    "eligibility": "Original positive RT, author-native eligibility, relative-clause source-label join",
+    "source_script": "experiment/Code/results.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "9e0989b985312d2cfc97fa2adc8ef222",
+    "region_fingerprints": {
+      "critical": "296d8cf778ff1affdbc4d5d044bc8d83"
+    }
+  },
+  {
+    "dataset": "boyce2020_g_maze",
+    "citation": "boyce_maze_2020",
+    "label": "G-maze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/boyce2020_g_maze.rds",
+    "source": "preprocessing_robustness/github-boyce_maze_2020/experiment/Data/Processed/g_maze.rds",
+    "sha256": "c4ba15f4b69eddc09da620a430055b35d13b8c41c0a7404522687982a81d0163",
+    "factors": {
+      "F1": "type"
+    },
+    "levels": {
+      "F1": [
+        "relative_high",
+        "relative_low"
+      ]
+    },
+    "design": "2",
+    "participants": 37,
+    "items": 24,
+    "observations": 636,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 636
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment/Code/results.Rmd",
+        "definition": "Source-defined critical label/position: {'0': 'critical'}"
+      }
+    },
+    "skewness": 1.9585,
+    "original_removal": "Positive, recorded RT; correct Maze selections; SPR accuracy >.8",
+    "original_transform": "natural log",
+    "eligibility": "Original positive RT, author-native eligibility, relative-clause source-label join",
+    "source_script": "experiment/Code/results.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "e517634f87fa96955ef0ba13e080e88c",
+    "region_fingerprints": {
+      "critical": "cff849d2e94fcdb85a825a7d169acf52"
+    }
+  },
+  {
+    "dataset": "boyce2020_one_b_maze",
+    "citation": "boyce_maze_2020",
+    "label": "Jozefowicz A-maze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/boyce2020_one_b_maze.rds",
+    "source": "preprocessing_robustness/github-boyce_maze_2020/experiment/Data/Processed/one_b_maze.rds",
+    "sha256": "df90610c0b8adce095582a822b9f8406665801bf18dfd211594a19c9952036ee",
+    "factors": {
+      "F1": "type"
+    },
+    "levels": {
+      "F1": [
+        "relative_high",
+        "relative_low"
+      ]
+    },
+    "design": "2",
+    "participants": 33,
+    "items": 24,
+    "observations": 502,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 502
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment/Code/results.Rmd",
+        "definition": "Source-defined critical label/position: {'0': 'critical'}"
+      }
+    },
+    "skewness": 4.6248,
+    "original_removal": "Positive, recorded RT; correct Maze selections; SPR accuracy >.8",
+    "original_transform": "natural log",
+    "eligibility": "Original positive RT, author-native eligibility, relative-clause source-label join",
+    "source_script": "experiment/Code/results.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "9ce8dee2ac4fb8c836e9c8eb9f653132",
+    "region_fingerprints": {
+      "critical": "d32a3a4f70e29ae76f36701a0f31cf78"
+    }
+  },
+  {
+    "dataset": "boyce2020_gulo_maze",
+    "citation": "boyce_maze_2020",
+    "label": "Gulordava A-maze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/boyce2020_gulo_maze.rds",
+    "source": "preprocessing_robustness/github-boyce_maze_2020/experiment/Data/Processed/gulo_maze.rds",
+    "sha256": "dd53d8eb1a074d918a89925b66fff68f136795144e0737eca70d2a0d674195ed",
+    "factors": {
+      "F1": "type"
+    },
+    "levels": {
+      "F1": [
+        "relative_high",
+        "relative_low"
+      ]
+    },
+    "design": "2",
+    "participants": 40,
+    "items": 24,
+    "observations": 642,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 642
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment/Code/results.Rmd",
+        "definition": "Source-defined critical label/position: {'0': 'critical'}"
+      }
+    },
+    "skewness": 2.7726,
+    "original_removal": "Positive, recorded RT; correct Maze selections; SPR accuracy >.8",
+    "original_transform": "natural log",
+    "eligibility": "Original positive RT, author-native eligibility, relative-clause source-label join",
+    "source_script": "experiment/Code/results.Rmd",
+    "legacy_critical_unchanged": true,
+    "input_md5": "7063297cae9d4c60fb0b3fb24004ff0a",
+    "region_fingerprints": {
+      "critical": "f3a770a0ed09c977e3f57f14ca582744"
+    }
+  },
+  {
+    "dataset": "dlugosz2025_gender",
+    "citation": "dlugosz_gender_2025",
+    "label": "dlugosz2025_gender",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/dlugosz2025_gender.rds",
+    "source": "preprocessing_robustness/396hw-dlugosz_gender_2025/Data.xlsx",
+    "sha256": "f562833920871dc48a82e056a67a38110b521afd162a4ab8db6d2213f52e872f",
+    "factors": {
+      "F1": "Transparency",
+      "F2": "Congruency"
+    },
+    "levels": {
+      "F1": [
+        "non-transparent",
+        "transparent"
+      ],
+      "F2": [
+        "congruent",
+        "incongruent"
+      ]
+    },
+    "design": "2x2",
+    "participants": 60,
+    "items": 32,
+    "observations": 1920,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1920
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "396hw-dlugosz_gender_2025",
+        "definition": "Target-noun RT supplied directly; proficiency not included in the lighter factorial model."
+      }
+    },
+    "skewness": 2.7223,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Target-noun RT supplied directly; proficiency not included in the lighter factorial model.",
+    "source_script": "Analysis.R",
+    "input_md5": "1c977432f7800305271b27bb6c32b459",
+    "region_fingerprints": {
+      "critical": "07b7a9283e711591aee46fa097ede946"
+    }
+  },
+  {
+    "dataset": "benjamin2023_existing",
+    "citation": "benjamin_conceptual_2023",
+    "label": "benjamin2023_existing",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/benjamin2023_existing.rds",
+    "source": "preprocessing_robustness/5r93v-benjamin_conceptual_2023/spr_dat_existing_compounds.csv",
+    "sha256": "7b721698f8880b3a6c90ed7b328d21370b05b038f0fbdd591f9a5c0e2cd612df",
+    "factors": {
+      "F1": "context"
+    },
+    "levels": {
+      "F1": [
+        "non-supportive",
+        "supportive"
+      ]
+    },
+    "design": "2",
+    "participants": 53,
+    "items": 100,
+    "observations": 5271,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5271
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "5r93v-benjamin_conceptual_2023",
+        "definition": "Target compound RT; focused supportive versus nonsupportive context model. Continuous entropy/frequency covariates are not included in this alternative model."
+      }
+    },
+    "skewness": 23.2336,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Target compound RT; focused supportive versus nonsupportive context model. Continuous entropy/frequency covariates are not included in this alternative model.",
+    "source_script": "",
+    "input_md5": "a22a10f4713e6b6282689645fc72bcde",
+    "region_fingerprints": {
+      "critical": "b812ee870cb5ddc0dbf867b9b651b2bb"
+    }
+  },
+  {
+    "dataset": "benjamin2023_novel",
+    "citation": "benjamin_conceptual_2023",
+    "label": "benjamin2023_novel",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/benjamin2023_novel.rds",
+    "source": "preprocessing_robustness/5r93v-benjamin_conceptual_2023/spr_dat_novel_compounds.csv",
+    "sha256": "6b2c2a6db6c9bd0db1a216842e671477bc78bea42a15dbb3cfc4035e070461bf",
+    "factors": {
+      "F1": "context"
+    },
+    "levels": {
+      "F1": [
+        "non-supportive",
+        "supportive"
+      ]
+    },
+    "design": "2",
+    "participants": 43,
+    "items": 100,
+    "observations": 4300,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4300
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "5r93v-benjamin_conceptual_2023",
+        "definition": "Target compound RT; focused supportive versus nonsupportive context model. Continuous entropy/frequency covariates are not included in this alternative model."
+      }
+    },
+    "skewness": 4.9294,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Target compound RT; focused supportive versus nonsupportive context model. Continuous entropy/frequency covariates are not included in this alternative model.",
+    "source_script": "",
+    "input_md5": "44667bc975d58860ca416a133ede8623",
+    "region_fingerprints": {
+      "critical": "2f5b0c184b421bfa67ac55137d295569"
+    }
+  },
+  {
+    "dataset": "tan2020_attachment",
+    "citation": "tan_task_2020",
+    "label": "tan2020_attachment",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/tan2020_attachment.rds",
+    "source": "preprocessing_robustness/4szpx-tan_task_2020/Tan_Foltz_reading_times_region4.csv",
+    "sha256": "63d3e41c2552a27b3ddeb4f49d936b41fb919f29b36069843a26f5eed4085b09",
+    "factors": {
+      "F1": "sent_type",
+      "F2": "quest_type",
+      "F3": "language"
+    },
+    "levels": {
+      "F1": [
+        "ambiguous",
+        "high",
+        "low"
+      ],
+      "F2": [
+        "relative clause",
+        "superficial"
+      ],
+      "F3": [
+        "L1",
+        "L2"
+      ]
+    },
+    "design": "3x2x2",
+    "participants": 55,
+    "items": 36,
+    "observations": 1968,
+    "invalid_or_missing": 12,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1968
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "4szpx-tan_task_2020",
+        "definition": "Paper: disambiguating region 4; rt_raw, not rt_fin."
+      }
+    },
+    "skewness": 3.7451,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Paper: disambiguating region 4; rt_raw, not rt_fin.",
+    "source_script": "",
+    "input_md5": "ef9080cba81b8604f0e69cdf92df7027",
+    "region_fingerprints": {
+      "critical": "be91b9d0dabb8e38162261f86b597baf"
+    }
+  },
+  {
+    "dataset": "slaats2026_agreement",
+    "citation": "slaats_more_2026",
+    "label": "slaats2026_agreement",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/slaats2026_agreement.rds",
+    "source": "preprocessing_robustness/bdg7u-slaats_more_2026/4 - main - data/readingtimes_88pp.csv",
+    "sha256": "cf1e867c7ffbfac5508ef771b17c9c8e929e5b79ac20eba955406997a76da5ad",
+    "factors": {
+      "F1": "agreement",
+      "F2": "surprisal"
+    },
+    "levels": {
+      "F1": [
+        "correct",
+        "incorrect"
+      ],
+      "F2": [
+        "high",
+        "low"
+      ]
+    },
+    "design": "2x2",
+    "participants": 88,
+    "items": 40,
+    "observations": 14074,
+    "invalid_or_missing": 6,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3518,
+      "postcritical_1": 3519,
+      "postcritical_2": 3518,
+      "postcritical_3": 3519
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Paper, target-word method and Table 1",
+        "definition": "word_index=5"
+      },
+      "postcritical_1": {
+        "source": "Paper, results",
+        "definition": "word_index=6",
+        "main_effect": "Effect of agreement in all analysed regions, target and three spillovers."
+      },
+      "postcritical_2": {
+        "source": "Paper, results",
+        "definition": "word_index=7",
+        "main_effect": "Effect of agreement in all analysed regions."
+      },
+      "postcritical_3": {
+        "source": "Paper, results",
+        "definition": "word_index=8",
+        "main_effect": "Effect of agreement in all analysed regions."
+      }
+    },
+    "skewness": 47.1603,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Paper Table 1: target is sixth word (zero-based word_index=5).",
+    "source_script": "",
+    "input_md5": "795257506e5f6f0eb3caef69b250ad0e",
+    "region_fingerprints": {
+      "critical": "e4166c04874b64d622510052fa4d64eb",
+      "postcritical_1": "49dcd00a9a7993c4955248c3f71d14ab",
+      "postcritical_2": "ce948d5675211d45d34fd4505829e336",
+      "postcritical_3": "36cbe8100af23bdb39bfdc2b365d974f"
+    }
+  },
+  {
+    "dataset": "haeuser2024_age",
+    "citation": "haeuser_age_2024",
+    "label": "haeuser2024_age",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/haeuser2024_age.rds",
+    "source": "preprocessing_robustness/czvb9-haeuser_age_2024/Data/SPR_data.csv",
+    "sha256": "ffaa6476d4b8067e5695c8f9384e04df7abe7b14221c8557eec4fda29525ae48",
+    "factors": {
+      "F1": "condition",
+      "F2": "group"
+    },
+    "levels": {
+      "F1": [
+        "predictable_plausible",
+        "unpredictable_slightly_implausible"
+      ],
+      "F2": [
+        "Older Adults",
+        "Younger Adults",
+        "Younger Adults Prolific"
+      ]
+    },
+    "design": "2x3",
+    "participants": 147,
+    "items": 44,
+    "observations": 19344,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 6448,
+      "postcritical_1": 6448,
+      "postcritical_2": 6448
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Paper, statistical analysis",
+        "definition": "Predictable/unpredictable noun."
+      },
+      "postcritical_1": {
+        "source": "Paper, Noun+1 results",
+        "definition": "noun_spill1_RT_orig",
+        "main_effect": "Main effect of predictability, p=.002."
+      },
+      "postcritical_2": {
+        "source": "Paper, Noun+2 results",
+        "definition": "noun_spill2_RT_orig",
+        "main_effect": "Significant effect of predictability, p<.001."
+      }
+    },
+    "skewness": 12.7185,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Use *_orig RT backups, not winsorized noun_RT columns.",
+    "source_script": "",
+    "input_md5": "b6231553a3a6d03f4357e504af498440",
+    "region_fingerprints": {
+      "critical": "9167553f37e4b67716bd69c403fc9cc9",
+      "postcritical_1": "e588db29dc6cd09b7d4886fb7a26a1b4",
+      "postcritical_2": "3fd774c6c427eaf34ac58daf86ae6e48"
+    }
+  },
+  {
+    "dataset": "dlugosz2025_def",
+    "citation": "dlugosz_is_2025",
+    "label": "dlugosz2025_def",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/dlugosz2025_def.rds",
+    "source": "preprocessing_robustness/fp86z-dlugosz_is_2025/DataDef.xlsx",
+    "sha256": "4a7bf340e827d272679e97f8b9217f1ecab4849aeb0aeea2fd03af580ed3b116",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Group"
+    },
+    "levels": {
+      "F1": [
+        "grammatical",
+        "ungrammatical"
+      ],
+      "F2": [
+        "quadrilinguals",
+        "trilinguals"
+      ]
+    },
+    "design": "2x2",
+    "participants": 44,
+    "items": 10,
+    "observations": 880,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 440,
+      "postcritical": 440
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "fp86z-dlugosz_is_2025",
+        "definition": "Critical trigger-noun column, not the word column Subject. 9999 is retained pending documented timeout interpretation; no ad-hoc RT cut applied."
+      },
+      "postcritical": {
+        "source": "fp86z-dlugosz_is_2025_D\u0142ugosz et al. - 2025 - Is there a multilingual ad.txt",
+        "main_effect": "Grammaticality main effect at the definite-phrase preposition; a simultaneous interaction does not negate the main effect.",
+        "original_numbered_passages": [
+          "608: \n609: \n610:     Definite NPs. Figure 2 plots the raw reading times for grammatical and ungrammatical items\n611: in both participant groups (trilinguals and quadrilinguals) and Table 7 shows the output of the\n612: models.\n613:     For the verb and the trigger noun, there was a significant effect of proficiency, with shorter\n614: reading times at higher proficiency levels. For the noun, no significant effects or interactions were\n615: found. For the preposition, being the first spill-over segment, the effect of grammaticality was sig\u00ad\n616: nificant, and so was the interaction between group and grammaticality. Starting with the effect of\n617: grammaticality, participants read the preposition more slowly in the ungrammatical than in the\n618: grammatical items. However, the pairwise contrasts for the interaction revealed that the difference\n619: between grammatical and ungrammatical items was significant for quadrilinguals, estimate = \u22120.16,\n620: SE = 0.04, t = \u22123.93, p = .001, but not for trilinguals, estimate = 0.01, SE = 0.04, t = 0.28, p = .993. This\n621: means that quadrilinguals rather than trilinguals read the preposition in the ungrammatical items"
+        ]
+      }
+    },
+    "skewness": 4.7889,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Critical trigger-noun column, not the word column Subject. 9999 is retained pending documented timeout interpretation; no ad-hoc RT cut applied.",
+    "source_script": "",
+    "input_md5": "47531fd7f79eaa84878984ef14caacb0",
+    "region_fingerprints": {
+      "critical": "dc1cb3d85a1f9b1f4d396d9e986dc3d2",
+      "postcritical": "cf26f31972b3cbd344337631894571fd"
+    }
+  },
+  {
+    "dataset": "dlugosz2025_indef",
+    "citation": "dlugosz_is_2025",
+    "label": "dlugosz2025_indef",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/dlugosz2025_indef.rds",
+    "source": "preprocessing_robustness/fp86z-dlugosz_is_2025/DataIndef.xlsx",
+    "sha256": "a6c0f6ff4f51fa6ea03d002fb75742db9944dfbd00f956f84f48223a16471d73",
+    "factors": {
+      "F1": "Grammaticality",
+      "F2": "Group"
+    },
+    "levels": {
+      "F1": [
+        "grammatical",
+        "ungrammatical"
+      ],
+      "F2": [
+        "quadrilinguals",
+        "trilinguals"
+      ]
+    },
+    "design": "2x2",
+    "participants": 44,
+    "items": 20,
+    "observations": 880,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 880
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "fp86z-dlugosz_is_2025",
+        "definition": "Critical trigger-noun column, not the word column Subject. 9999 is retained pending documented timeout interpretation; no ad-hoc RT cut applied."
+      }
+    },
+    "skewness": 5.0983,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Critical trigger-noun column, not the word column Subject. 9999 is retained pending documented timeout interpretation; no ad-hoc RT cut applied.",
+    "source_script": "",
+    "input_md5": "c09776feef4f49fe93431ae0827a9230",
+    "region_fingerprints": {
+      "critical": "1ca7b0c703c85c92d2e4f68a64c3f114"
+    }
+  },
+  {
+    "dataset": "giskes2023_number",
+    "citation": "giskes_abstract_2023",
+    "label": "giskes2023_number",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/giskes2023_number.rds",
+    "source": "preprocessing_robustness/kcqt9-giskes_abstract_2023/data_spr.csv",
+    "sha256": "daa73b87f8b03d342fb8ec18e7b6bc4362d5243e28f4e49703af907da2769842",
+    "factors": {
+      "F1": "CataphorNumber",
+      "F2": "NumberMatch"
+    },
+    "levels": {
+      "F1": [
+        "catPL",
+        "catSG"
+      ],
+      "F2": [
+        "Match",
+        "Mismatch"
+      ]
+    },
+    "design": "2x2",
+    "participants": 179,
+    "items": 24,
+    "observations": 8592,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4296,
+      "postcritical": 4296
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Paper and AbstractPrediction_plotsandmodels.R",
+        "definition": "Region 6: V2 verb"
+      },
+      "postcritical": {
+        "source": "Paper, respective results section",
+        "definition": "Region 7",
+        "main_effect": "Match effect Pr=.999 (number); gender mismatch effect Pr>.999 (gender)."
+      }
+    },
+    "skewness": 30.8584,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Number and independent gender item sets; no filler pooling.",
+    "source_script": "AbstractPrediction_plotsandmodels.R",
+    "input_md5": "9cb91acd01ed2cfea3a52132fe8d80eb",
+    "region_fingerprints": {
+      "critical": "2768d26b4e626267fbbc25e31607774d",
+      "postcritical": "3da7ea6375fbaa7672ae31e5cd34560e"
+    }
+  },
+  {
+    "dataset": "giskes2023_gender",
+    "citation": "giskes_abstract_2023",
+    "label": "giskes2023_gender",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/giskes2023_gender.rds",
+    "source": "preprocessing_robustness/kcqt9-giskes_abstract_2023/data_spr.csv",
+    "sha256": "daa73b87f8b03d342fb8ec18e7b6bc4362d5243e28f4e49703af907da2769842",
+    "factors": {
+      "F1": "GenderMatch"
+    },
+    "levels": {
+      "F1": [
+        "GM",
+        "GMM"
+      ]
+    },
+    "design": "2",
+    "participants": 179,
+    "items": 12,
+    "observations": 4296,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 2148,
+      "postcritical": 2148
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "Paper and AbstractPrediction_plotsandmodels.R",
+        "definition": "Region 7: name"
+      },
+      "postcritical": {
+        "source": "Paper, respective results section",
+        "definition": "Region 8",
+        "main_effect": "Match effect Pr=.999 (number); gender mismatch effect Pr>.999 (gender)."
+      }
+    },
+    "skewness": 4.9987,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Number and independent gender item sets; no filler pooling.",
+    "source_script": "AbstractPrediction_plotsandmodels.R",
+    "input_md5": "a65c4190ec6220f383fe8a193bc88ce7",
+    "region_fingerprints": {
+      "critical": "00a15da3d531fbf6d2010ee8a915618c",
+      "postcritical": "9ee85ccd0acb1a34c81eef18180c86c4"
+    }
+  },
+  {
+    "dataset": "haigh2022_context",
+    "citation": "haigh_diving_2022",
+    "label": "haigh2022_context",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/haigh2022_context.rds",
+    "source": "preprocessing_robustness/na6vy-haigh_diving_2022/AllData_OSF.xlsx",
+    "sha256": "74aeebedc3a102804b60432b9a3d807b7af372457681eb4af880d5f14d547d12",
+    "factors": {
+      "F1": "SentenceContext",
+      "F2": "TaskDemands",
+      "F3": "AgeGroup"
+    },
+    "levels": {
+      "F1": [
+        "Matched",
+        "Mismatched",
+        "Neutral"
+      ],
+      "F2": [
+        "NoQuestions",
+        "Questions"
+      ],
+      "F3": [
+        "Old",
+        "Young"
+      ]
+    },
+    "design": "3x2x2",
+    "participants": 80,
+    "items": 148,
+    "observations": 13903,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 13903
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "na6vy-haigh_diving_2022",
+        "definition": "READING sheet: target-word RT only; repeated conditions retained."
+      }
+    },
+    "skewness": 3.3065,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; READING sheet: target-word RT only; repeated conditions retained.",
+    "source_script": "",
+    "input_md5": "a4619be1c3ede3991a5d0dc3089d2578",
+    "region_fingerprints": {
+      "critical": "1c3f1174369d9908c42a0495d86909bf"
+    }
+  },
+  {
+    "dataset": "mifka2024_ability",
+    "citation": "mifka-profozic_unpacking_2024",
+    "label": "mifka2024_ability",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/mifka2024_ability.rds",
+    "source": "preprocessing_robustness/rnbjm-mifka-profozic_unpacking_2024/data_SPR.csv",
+    "sha256": "f6cdc763ae2d21e4fe4d99876dab82871f209c21bd651b6e249b4153c32e61a7",
+    "factors": {
+      "F1": "Congruency",
+      "F2": "Group"
+    },
+    "levels": {
+      "F1": [
+        "congruent",
+        "incongruent"
+      ],
+      "F2": [
+        "L1",
+        "L2"
+      ]
+    },
+    "design": "2x2",
+    "participants": 75,
+    "items": 13,
+    "observations": 1050,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1050
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rnbjm-mifka-profozic_unpacking_2024",
+        "definition": "Modal is Segment 1, per paper's segment definitions. Modality-specific subdesigns share participants; not independent cohorts."
+      }
+    },
+    "skewness": 2.3007,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Modal is Segment 1, per paper's segment definitions. Modality-specific subdesigns share participants; not independent cohorts.",
+    "source_script": "",
+    "input_md5": "a2370016de6d89e9ca47896d434a7025",
+    "region_fingerprints": {
+      "critical": "d3026d4a195bd1862de3eaadb4913319"
+    }
+  },
+  {
+    "dataset": "mifka2024_epistemic",
+    "citation": "mifka-profozic_unpacking_2024",
+    "label": "mifka2024_epistemic",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/mifka2024_epistemic.rds",
+    "source": "preprocessing_robustness/rnbjm-mifka-profozic_unpacking_2024/data_SPR.csv",
+    "sha256": "f6cdc763ae2d21e4fe4d99876dab82871f209c21bd651b6e249b4153c32e61a7",
+    "factors": {
+      "F1": "Congruency",
+      "F2": "Group"
+    },
+    "levels": {
+      "F1": [
+        "congruent",
+        "incongruent"
+      ],
+      "F2": [
+        "L1",
+        "L2"
+      ]
+    },
+    "design": "2x2",
+    "participants": 75,
+    "items": 13,
+    "observations": 1050,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1050
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rnbjm-mifka-profozic_unpacking_2024",
+        "definition": "Modal is Segment 1, per paper's segment definitions. Modality-specific subdesigns share participants; not independent cohorts."
+      }
+    },
+    "skewness": 2.2532,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Modal is Segment 1, per paper's segment definitions. Modality-specific subdesigns share participants; not independent cohorts.",
+    "source_script": "",
+    "input_md5": "8c4457c01c9531bcf9a7adfbdc2c6f08",
+    "region_fingerprints": {
+      "critical": "0ac4aa761d7b00df01db467181e5f9fc"
+    }
+  },
+  {
+    "dataset": "mifka2024_permission",
+    "citation": "mifka-profozic_unpacking_2024",
+    "label": "mifka2024_permission",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/mifka2024_permission.rds",
+    "source": "preprocessing_robustness/rnbjm-mifka-profozic_unpacking_2024/data_SPR.csv",
+    "sha256": "f6cdc763ae2d21e4fe4d99876dab82871f209c21bd651b6e249b4153c32e61a7",
+    "factors": {
+      "F1": "Congruency",
+      "F2": "Group"
+    },
+    "levels": {
+      "F1": [
+        "marked",
+        "unmarked"
+      ],
+      "F2": [
+        "L1",
+        "L2"
+      ]
+    },
+    "design": "2x2",
+    "participants": 75,
+    "items": 13,
+    "observations": 1050,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1050
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rnbjm-mifka-profozic_unpacking_2024",
+        "definition": "Modal is Segment 1, per paper's segment definitions. Modality-specific subdesigns share participants; not independent cohorts."
+      }
+    },
+    "skewness": 1.7409,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Modal is Segment 1, per paper's segment definitions. Modality-specific subdesigns share participants; not independent cohorts.",
+    "source_script": "",
+    "input_md5": "1209bffc7d375101885dd43b813aef97",
+    "region_fingerprints": {
+      "critical": "759aa0524e537f225e148ff9eff774d0"
+    }
+  },
+  {
+    "dataset": "fujita2023_predictive",
+    "citation": "fujita_predictive_2023",
+    "label": "fujita2023_predictive",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2023_predictive.rds",
+    "source": "preprocessing_robustness/rh4xz-fujita_predictive_2023/CleanData.csv",
+    "sha256": "ccaee19ce268bff876a0d0f1aff643bb8a5e3b7f41cecc498b250b5535229e95",
+    "factors": {
+      "F1": "Wh",
+      "F2": "Gender"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ],
+      "F2": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2x2",
+    "participants": 324,
+    "items": 24,
+    "observations": 11744,
+    "invalid_or_missing": 3808,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical_disambiguation": 5689,
+      "critical_reflexive": 6055
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rh4xz-fujita_predictive_2023",
+        "definition": "Two independently defined critical sites in regionA and regionB; no post-region auto-addition."
+      }
+    },
+    "skewness": 44.5266,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Two independently defined critical sites in regionA and regionB; no post-region auto-addition.",
+    "source_script": "",
+    "input_md5": "c511a0f9bd03b1d3e154c9ef24780d47",
+    "region_fingerprints": {
+      "critical_disambiguation": "dc49dc718b0ca4c62345ea6020ce85fc",
+      "critical_reflexive": "7162f41399e20914f6093d9dca40653d"
+    }
+  },
+  {
+    "dataset": "fujita2025_active_additional",
+    "citation": "fujita_active_2025",
+    "label": "fujita2025_active_additional",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2025_active_additional.rds",
+    "source": "preprocessing_robustness/9dp6e-fujita_active_2025/CleanDataAdditionalExperiment.csv",
+    "sha256": "5eb9bb885b3541b1035a6dc582cdd1f9ef84ecaa27696ffdf6aeb35780e9f666",
+    "factors": {
+      "F1": "dependency"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2",
+    "participants": 154,
+    "items": 16,
+    "observations": 2464,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 2464
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "9dp6e-fujita_active_2025",
+        "definition": "Additional experiment's dependency contrast, not a duplicate of the main experiment."
+      }
+    },
+    "skewness": 5.1631,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Additional experiment's dependency contrast, not a duplicate of the main experiment.",
+    "source_script": "",
+    "input_md5": "5798b64c48b73040503732ccb728b93b",
+    "region_fingerprints": {
+      "critical": "08c99f437880d31e765abadb1c08b735"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_avcspr_gp",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_avcspr_gp",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_avcspr_gp.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/AVCSPR_GP_RT.csv",
+    "sha256": "0d3e02f17e8ead0d4bca6168bc5738a60c7f6ab93257125ead0a7e747b679799",
+    "factors": {
+      "F1": "ambiguity"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 13.0965,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "5116a3262fad97eb43b99995e444df2b",
+    "region_fingerprints": {
+      "critical": "b0c8f6715e01a531c0e70766c94808fa"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_avcspr_sv",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_avcspr_sv",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_avcspr_sv.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/AVCSPR_SV_RT.csv",
+    "sha256": "28ba39c5e3a8dfa4f519805843292145c9a29ca7cf130916f13a66c3ba67bfb1",
+    "factors": {
+      "F1": "grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 19.86,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "74967cc09877f6ae64cda6224d800273",
+    "region_fingerprints": {
+      "critical": "2392e9c1549d3d74c01aa94b64857eb4"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_navcspr_gp",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_navcspr_gp",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_navcspr_gp.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/NAVCSPR_GP_RT.csv",
+    "sha256": "b59a0350d526ff4812fa840db5cfcb17c8547ceece38d7c06228f475204e0593",
+    "factors": {
+      "F1": "ambiguity"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 8.1887,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "1c2d2941315628e6f010f03ba0cf1976",
+    "region_fingerprints": {
+      "critical": "e341ac50c2d05ee92ec375f8bde80f29"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_navcspr_sv",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_navcspr_sv",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_navcspr_sv.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/NAVCSPR_SV_RT.csv",
+    "sha256": "a4e532310afe5c4413c7516a0266d2cc97d9edf355a7650ee46ff8a8f5d5f826",
+    "factors": {
+      "F1": "grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 9.6331,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "a851310a212e9ec2af3889d09f56740c",
+    "region_fingerprints": {
+      "critical": "8e2f3580ddbad34830d7eeb207aae842"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_ncspr_gp",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_ncspr_gp",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_ncspr_gp.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/NCSPR_GP_RT.csv",
+    "sha256": "3e0a6897b2b7f45e735dba454a940b86fbd327367e278ff4fc08607d90e3b793",
+    "factors": {
+      "F1": "ambiguity"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 4.8785,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "708858b09601b367e5f1244668507f6a",
+    "region_fingerprints": {
+      "critical": "96bcfcf52a36d5b9c950484eff2ca248"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_ncspr_sv",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_ncspr_sv",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_ncspr_sv.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/NCSPR_SV_RT.csv",
+    "sha256": "46b3258abe869699e8f4e6f09df6dc414bf2bae1ed3aea76079e89e19e2873bb",
+    "factors": {
+      "F1": "grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 3.5845,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "896b7d7aeda7427c78fb869942f7a746",
+    "region_fingerprints": {
+      "critical": "b2f24e2766b2f28567ccb6f1873da883"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_pcspr_gp",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_pcspr_gp",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_pcspr_gp.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/PCSPR_GP_RT.csv",
+    "sha256": "57f00af70c99f18ad170fb9d23c6764ea6444b7ec093e33f46c9b07d388c5ea6",
+    "factors": {
+      "F1": "ambiguity"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 21.8695,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "cb8d7e1585824ee5dce0156066cdc8e2",
+    "region_fingerprints": {
+      "critical": "b8f1685626cf77a0bd25690525adf1ea"
+    }
+  },
+  {
+    "dataset": "fujita2026_reassessment_pcspr_sv",
+    "citation": "fujita_reassessment_2026",
+    "label": "fujita2026_reassessment_pcspr_sv",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/fujita2026_reassessment_pcspr_sv.rds",
+    "source": "preprocessing_robustness/p2rck-fujita_reassessment_2026/ReadingTime/PCSPR_SV_RT.csv",
+    "sha256": "468d140bee9917fbc7ce10caadd0c9b36bed828d12b535ec1631f21c4da16d09",
+    "factors": {
+      "F1": "grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2",
+    "participants": 100,
+    "items": 14,
+    "observations": 1400,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1400
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "p2rck-fujita_reassessment_2026",
+        "definition": "Separate GP/SV paradigms and task implementations; cohorts may overlap."
+      }
+    },
+    "skewness": 6.5997,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate GP/SV paradigms and task implementations; cohorts may overlap.",
+    "source_script": "",
+    "input_md5": "a04156dc1256cf66574e7821a4dfdcb9",
+    "region_fingerprints": {
+      "critical": "7c5e5fe247be1d2d3e429f02c1a5b4f4"
+    }
+  },
+  {
+    "dataset": "kim2024_e1",
+    "citation": "kim_incremental_2024",
+    "label": "kim2024_e1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/kim2024_e1.rds",
+    "source": "preprocessing_robustness/rsdp5-kim_incremental_2024/datasets/rawData/Archive.zip",
+    "sha256": "78f279e2bf602f8b6a083feefd15b7ad06fc77bc5d71980bf5cc62a6b72b7557",
+    "factors": {
+      "F1": "Clause",
+      "F2": "Distractor",
+      "F3": "Grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "appos",
+        "restr"
+      ],
+      "F2": [
+        "plural",
+        "singular"
+      ],
+      "F3": [
+        "gram",
+        "ungram"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 118,
+    "items": 48,
+    "observations": 11328,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5664,
+      "postcritical": 5664
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rsdp5-kim_incremental_2024",
+        "definition": "Archive member exp1_raw.csv; critical WordNo=7."
+      },
+      "postcritical": {
+        "source": "rsdp5-kim_incremental_2024_Kim and Xiang - 2024 - Incremental Discourse-Updat.txt",
+        "main_effect": "Overall grammaticality main effect at spillover, in addition to its nested attraction contrasts.",
+        "original_numbered_passages": [
+          "495:    Fig. 2 presents the mean log reading times for each region, with regions of interest high-\n496: lighted in gray boxes.\n497:    Table 3 shows the statistical results with the three fixed effects and their interactions\n498: included in the model. We found a main effect of grammaticality (ungrammatical > gram-\n499: matical) in both the critical (\u03b2\u0302 = 0.026, se = 0.008, t = 3.22) and spillover (\u03b2\u0302 = 0.058, se =\n500: \n501:                                                                                                       15516709, 2024, 9, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/cogs.13497 by Readcube-Labtiva, Wiley Online Library on [15/11/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License\n502: 12 of 46                   S. J. Kim, M. Xiang / Cognitive Science 48 (2024)\n503: \n504: 0.009, t = 6.41) regions. The RRC condition took longer than the ARC condition at the criti-\n505: cal region (\u03b2\u0302 = 0.030, se = 0.008, t = 3.96). More relevant for our purpose, at the spillover\n506: region, there was a significant two-way interaction of clause and distractor (\u03b2\u0302 = 0.031, se =\n507: 0.015, t = 2.15) and a significant two-way interaction of distractor and grammaticality (\u03b2\u0302 =\n508: 0.029, se = 0.015, t = 2.0); yet, the three-way interaction did not reach significance in either"
+        ]
+      }
+    },
+    "skewness": 12.0163,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Archive member exp1_raw.csv; critical WordNo=7.",
+    "source_script": "functions.R::assign_region",
+    "input_md5": "118c6257f32d740b98ba58fe68f829bf",
+    "region_fingerprints": {
+      "critical": "b471eed95cce03106fdd4d3a07b29ec9",
+      "postcritical": "bb437f015462fd063acc65ef5a6b95f7"
+    }
+  },
+  {
+    "dataset": "kim2024_e2",
+    "citation": "kim_incremental_2024",
+    "label": "kim2024_e2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/kim2024_e2.rds",
+    "source": "preprocessing_robustness/rsdp5-kim_incremental_2024/datasets/rawData/Archive.zip",
+    "sha256": "78f279e2bf602f8b6a083feefd15b7ad06fc77bc5d71980bf5cc62a6b72b7557",
+    "factors": {
+      "F1": "Clause",
+      "F2": "Distractor",
+      "F3": "Grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "appos",
+        "restr"
+      ],
+      "F2": [
+        "plural",
+        "singular"
+      ],
+      "F3": [
+        "gram",
+        "ungram"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 116,
+    "items": 48,
+    "observations": 11094,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5547,
+      "postcritical": 5547
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rsdp5-kim_incremental_2024",
+        "definition": "Archive member exp2_raw.csv; critical WordNo=6."
+      },
+      "postcritical": {
+        "source": "rsdp5-kim_incremental_2024_Kim and Xiang - 2024 - Incremental Discourse-Updat.txt",
+        "main_effect": "Original model table reports overall grammaticality main effect at spillover: estimate .031, SE .008, t=4.08.",
+        "original_numbered_passages": [
+          "823: Table 7\n824: Summary of the regular mixed effects model for the reading times in Experiment 2\n825: \n826:                                                                               Regions\n827:                                                     critical                                     spillover\n828: Fixed effects                              \u03b2\u0302          SE                 t              \u03b2\u0302         SE           t\n829: (Intercept)                             3.198        0.073          43.82               3.296      0.068       48.70\n830: logRT of the previous region            0.450        0.012          36.72               0.435      0.011       38.66\n831: Clause                                 \u22120.001        0.008          \u22120.13               0.006      0.008        0.76\n832: Distractor                             \u22120.001        0.008          \u22120.16               0.028      0.008        3.67\n833: Grammaticality                          0.005        0.008           0.68               0.031      0.008        4.08\n834: Clause:Distractor                       0.004        0.015           0.25               0.000      0.015        0.03\n835: Clause:Grammaticality                  \u22120.006        0.015          \u22120.38               0.015      0.015        1.01\n836: Distractor:Grammaticality              \u22120.014        0.015          \u22120.94               0.054      0.015        3.54\n837: Clause:Distractor:Grammaticality        0.014        0.030           0.45               0.005      0.030        0.16"
+        ]
+      }
+    },
+    "skewness": 8.1461,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Archive member exp2_raw.csv; critical WordNo=6.",
+    "source_script": "functions.R::assign_region",
+    "input_md5": "196072541780aeab848f9a06137227a2",
+    "region_fingerprints": {
+      "critical": "8f0ce7031e29be022fa3c6890f76f553",
+      "postcritical": "53776ea7990b32c0601a287944be676f"
+    }
+  },
+  {
+    "dataset": "kim2024_e3",
+    "citation": "kim_incremental_2024",
+    "label": "kim2024_e3",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/kim2024_e3.rds",
+    "source": "preprocessing_robustness/rsdp5-kim_incremental_2024/datasets/rawData/Archive.zip",
+    "sha256": "78f279e2bf602f8b6a083feefd15b7ad06fc77bc5d71980bf5cc62a6b72b7557",
+    "factors": {
+      "F1": "Clause",
+      "F2": "Distractor",
+      "F3": "Grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "appos",
+        "restr"
+      ],
+      "F2": [
+        "plural",
+        "singular"
+      ],
+      "F3": [
+        "gram",
+        "ungram"
+      ]
+    },
+    "design": "2x2x2",
+    "participants": 115,
+    "items": 48,
+    "observations": 11039,
+    "invalid_or_missing": 1,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5519,
+      "postcritical": 5520
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "rsdp5-kim_incremental_2024",
+        "definition": "Archive member exp3_raw.csv; critical WordNo=8."
+      },
+      "postcritical": {
+        "source": "rsdp5-kim_incremental_2024_Kim and Xiang - 2024 - Incremental Discourse-Updat.txt",
+        "main_effect": "Original model table reports overall grammaticality main effect at spillover: estimate .027, SE .010, t=2.85.",
+        "original_numbered_passages": [
+          "1064: \n1065: Table 11\n1066: Summary of the regular mixed effects model of the reading times in Experiment 3\n1067: \n1068:                                                                               Regions\n1069:                                                       critical                                spillover\n1070: Fixed effects                              \u03b2\u0302            SE               t              \u03b2\u0302      SE           t\n1071: (Intercept)                              3.837         0.072            52.93        3.422      0.067      51.40\n1072: logRT of the previous region             0.341         0.012            28.34        0.411      0.011      37.08\n1073: Clause                                   0.012         0.008             1.53       \u22120.010      0.008      \u22121.20\n1074: Distractor                              \u22120.009         0.008            \u22121.12        0.021      0.008       2.54\n1075: Grammaticality                           0.003         0.008             0.37        0.027      0.010       2.85\n1076: Clause:Distractor                        0.034         0.015             2.26       \u22120.001      0.015      \u22120.09\n1077: Clause:Grammaticality                   \u22120.026         0.015            \u22121.69        0.006      0.015       0.42\n1078: Distractor:Grammaticality                0.005         0.015             0.35        0.041      0.015       2.82\n1079: Clause:Distractor:Grammaticality        \u22120.019         0.030            \u22120.64       \u22120.017      0.029      \u22120.59"
+        ]
+      }
+    },
+    "skewness": 6.6972,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Archive member exp3_raw.csv; critical WordNo=8.",
+    "source_script": "functions.R::assign_region",
+    "input_md5": "9b50962f870f86ca2368ef89013377fe",
+    "region_fingerprints": {
+      "critical": "2fb3e7837d12ba519c13404c031a73d3",
+      "postcritical": "8aafa9dbef457e7ca69ba748bd07eb31"
+    }
+  },
+  {
+    "dataset": "palleschi2026_e1",
+    "citation": "palleschi_contrasting_2026",
+    "label": "palleschi2026_e1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/palleschi2026_e1.rds",
+    "source": "preprocessing_robustness/n38tk-palleschi_contrasting_2026/01-data/tidy/exp1_data_tidy.csv.zip",
+    "sha256": "3e43bbb83ee9781e578f82275fc267d7f9bd053df4af5d7c1cbe4426650950ad",
+    "factors": {
+      "F1": "lifetime",
+      "F2": "tense"
+    },
+    "levels": {
+      "F1": [
+        "alive",
+        "dead"
+      ],
+      "F2": [
+        "PP",
+        "PS"
+      ]
+    },
+    "design": "2x2",
+    "participants": 160,
+    "items": 20,
+    "observations": 9600,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3200,
+      "postcritical_3": 3200,
+      "postcritical_4": 3200
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "n38tk-palleschi_contrasting_2026",
+        "definition": "Raw word duration from individual experiment archive; not transformed or pooled export."
+      },
+      "postcritical_3": {
+        "source": "n38tk-palleschi_contrasting_2026_Palleschi et al. - 2026 - Contrasting different co.txt",
+        "main_effect": "Lifetime-tense congruence main effects at verb+3 (p=.001) and verb+4 (p<.001).",
+        "original_numbered_passages": [
+          "743:                reported first, followed by differences between experiments.\n744:                    A main effect of \uf774\uf765\uf76e\uf773\uf765 was present in all regions, with the Present Perfect eliciting\n745:                longer reading times than the Simple Past in all cases (\uf776\uf765\uf772\uf762: \u03b2^ = 11 ms [4, 18], t = 3.2,\n746:                p =.002; \uf776\uf765\uf772\uf762+1: \u03b2^ = 32 ms [19, 45], t = 5, p <.001; \uf776\uf765\uf772\uf762+2: \u03b2^ = 25 ms [13, 38], t = 4.1,\n747:                p <.001; \uf776\uf765\uf772\uf762+3: \u03b2^ = 35 ms [15, 56], t = 3.6, p =.002; \uf776\uf765\uf772\uf762+4: \u03b2^ = 42 ms [ 5, 89],\n748:                t = 1.8, p =.079). A main effect of lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in the \uf776\uf765\uf772\uf762+3\n749:                and +4 regions, with longer reading times for incongruent than congruent conditions\n750:                (\uf776\uf765\uf772\uf762+3: \u03b2^ = 35 ms [16, 54], t = 3.8, p =.001; \uf776\uf765\uf772\uf762+4: \u03b2^ = 135 ms [85, 185], t = 5.4,\n751:                p <.001). An interaction of \uf774\uf765\uf76e\uf773\uf765 and lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in\n752:                the \uf776\uf765\uf772\uf762+3 and +4 regions (\uf776\uf765\uf772\uf762+3: \u03b2^ = 59 ms [29, 90], t = 3.8, p <.001; \uf776\uf765\uf772\uf762+4:"
+        ]
+      },
+      "postcritical_4": {
+        "source": "n38tk-palleschi_contrasting_2026_Palleschi et al. - 2026 - Contrasting different co.txt",
+        "main_effect": "Lifetime-tense congruence main effects at verb+3 (p=.001) and verb+4 (p<.001).",
+        "original_numbered_passages": [
+          "743:                reported first, followed by differences between experiments.\n744:                    A main effect of \uf774\uf765\uf76e\uf773\uf765 was present in all regions, with the Present Perfect eliciting\n745:                longer reading times than the Simple Past in all cases (\uf776\uf765\uf772\uf762: \u03b2^ = 11 ms [4, 18], t = 3.2,\n746:                p =.002; \uf776\uf765\uf772\uf762+1: \u03b2^ = 32 ms [19, 45], t = 5, p <.001; \uf776\uf765\uf772\uf762+2: \u03b2^ = 25 ms [13, 38], t = 4.1,\n747:                p <.001; \uf776\uf765\uf772\uf762+3: \u03b2^ = 35 ms [15, 56], t = 3.6, p =.002; \uf776\uf765\uf772\uf762+4: \u03b2^ = 42 ms [ 5, 89],\n748:                t = 1.8, p =.079). A main effect of lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in the \uf776\uf765\uf772\uf762+3\n749:                and +4 regions, with longer reading times for incongruent than congruent conditions\n750:                (\uf776\uf765\uf772\uf762+3: \u03b2^ = 35 ms [16, 54], t = 3.8, p =.001; \uf776\uf765\uf772\uf762+4: \u03b2^ = 135 ms [85, 185], t = 5.4,\n751:                p <.001). An interaction of \uf774\uf765\uf76e\uf773\uf765 and lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in\n752:                the \uf776\uf765\uf772\uf762+3 and +4 regions (\uf776\uf765\uf772\uf762+3: \u03b2^ = 59 ms [29, 90], t = 3.8, p <.001; \uf776\uf765\uf772\uf762+4:"
+        ]
+      }
+    },
+    "skewness": 57.4715,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Raw word duration from individual experiment archive; not transformed or pooled export.",
+    "source_script": "",
+    "input_md5": "1f399bfcd336b68c354bdca6df792592",
+    "region_fingerprints": {
+      "critical": "63213efb2434f9215b7f15694d9b95f4",
+      "postcritical_3": "f063ddf041a1639e688b2df487e00ff9",
+      "postcritical_4": "9b62ac798b4fafb580035c996e57f573"
+    }
+  },
+  {
+    "dataset": "palleschi2026_e2",
+    "citation": "palleschi_contrasting_2026",
+    "label": "palleschi2026_e2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/palleschi2026_e2.rds",
+    "source": "preprocessing_robustness/n38tk-palleschi_contrasting_2026/01-data/tidy/exp2_data_tidy.csv.zip",
+    "sha256": "1e9e036b1c7554a982174d8130faa49220fbaa746a07bfbe0a61f9625d08ebda",
+    "factors": {
+      "F1": "lifetime",
+      "F2": "tense"
+    },
+    "levels": {
+      "F1": [
+        "alive",
+        "dead"
+      ],
+      "F2": [
+        "PP",
+        "PS"
+      ]
+    },
+    "design": "2x2",
+    "participants": 160,
+    "items": 20,
+    "observations": 9600,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3200,
+      "postcritical_3": 3200,
+      "postcritical_4": 3200
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "n38tk-palleschi_contrasting_2026",
+        "definition": "Raw word duration from individual experiment archive; not transformed or pooled export."
+      },
+      "postcritical_3": {
+        "source": "n38tk-palleschi_contrasting_2026_Palleschi et al. - 2026 - Contrasting different co.txt",
+        "main_effect": "Lifetime-tense congruence main effects at verb+3 and verb+4.",
+        "original_numbered_passages": [
+          "952:            Figure 6. Experiment 2 back-transformed predicted self-paced reading times across sentence regions (with\n953:            95% confidence intervals).\n954: \n955: \n956: \n957:            t = 3.9, p <.001). In all cases, the present perfect elicited longer reading times than the\n958:            simple past.\n959:                A main effect of lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in the \uf776\uf765\uf772\uf762+3 and +4\n960:            regions (\uf776\uf765\uf772\uf762+3: \u03b2^ = 30 ms [16, 44], t = 4.3, p <.001; \uf776\uf765\uf772\uf762+4: ^     \u03b2 = 146 ms [96, 197],\n961:            t = 6, p <.001). In all cases, incongruent conditions elicited longer self-paced reading\n962:            times than congruent conditions. Interaction effects were not present in any region.\n963: \n964: \n965:            5. Experiment 3"
+        ]
+      },
+      "postcritical_4": {
+        "source": "n38tk-palleschi_contrasting_2026_Palleschi et al. - 2026 - Contrasting different co.txt",
+        "main_effect": "Lifetime-tense congruence main effects at verb+3 and verb+4.",
+        "original_numbered_passages": [
+          "952:            Figure 6. Experiment 2 back-transformed predicted self-paced reading times across sentence regions (with\n953:            95% confidence intervals).\n954: \n955: \n956: \n957:            t = 3.9, p <.001). In all cases, the present perfect elicited longer reading times than the\n958:            simple past.\n959:                A main effect of lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in the \uf776\uf765\uf772\uf762+3 and +4\n960:            regions (\uf776\uf765\uf772\uf762+3: \u03b2^ = 30 ms [16, 44], t = 4.3, p <.001; \uf776\uf765\uf772\uf762+4: ^     \u03b2 = 146 ms [96, 197],\n961:            t = 6, p <.001). In all cases, incongruent conditions elicited longer self-paced reading\n962:            times than congruent conditions. Interaction effects were not present in any region.\n963: \n964: \n965:            5. Experiment 3"
+        ]
+      }
+    },
+    "skewness": 14.564,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Raw word duration from individual experiment archive; not transformed or pooled export.",
+    "source_script": "",
+    "input_md5": "984302191e734d85d2a39539d63cca45",
+    "region_fingerprints": {
+      "critical": "67075e906b886dcfd6c52c8501801776",
+      "postcritical_3": "2b2425ad9e3562c100d9e528b55a8b0d",
+      "postcritical_4": "bfe6201ff6093c3ac93105eed334c64c"
+    }
+  },
+  {
+    "dataset": "palleschi2026_e3",
+    "citation": "palleschi_contrasting_2026",
+    "label": "palleschi2026_e3",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/palleschi2026_e3.rds",
+    "source": "preprocessing_robustness/n38tk-palleschi_contrasting_2026/01-data/tidy/exp3_data_tidy.csv.zip",
+    "sha256": "1a6e537dc83807b6bfd8d157d230ce9eb7f7d368b6131210d26c789b23af4066",
+    "factors": {
+      "F1": "lifetime",
+      "F2": "tense"
+    },
+    "levels": {
+      "F1": [
+        "alive",
+        "dead"
+      ],
+      "F2": [
+        "PP",
+        "PS"
+      ]
+    },
+    "design": "2x2",
+    "participants": 156,
+    "items": 20,
+    "observations": 6240,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3120,
+      "postcritical_4": 3120
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "n38tk-palleschi_contrasting_2026",
+        "definition": "Raw word duration from individual experiment archive; not transformed or pooled export."
+      },
+      "postcritical_4": {
+        "source": "n38tk-palleschi_contrasting_2026_Palleschi et al. - 2026 - Contrasting different co.txt",
+        "main_effect": "Lifetime-tense congruence main effect at verb+4, p=.035.",
+        "original_numbered_passages": [
+          "1175: \n1176:               24       Palleschi, Ronderos and Knoeferle\n1177: \n1178:               p <.001; \uf776\uf765\uf772\uf762+1: \u03b2^ = 20 ms [13, 28], t = 5, p <.001; \uf776\uf765\uf772\uf762+2: \u03b2^ = 21 ms [11, 31],\n1179:               t = 4, p <.001; \uf776\uf765\uf772\uf762+3: ^\u03b2 = 10 ms [ 1, 21], t = 1.9, p =.07; \uf776\uf765\uf772\uf762+4: \u03b2^ = 42 ms [19, 66],\n1180:               t = 3.6, p <.001). A main effect of lifetime-tense \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in the \uf776\uf765\uf772\uf762+4\n1181:               region, with longer reading times for incongruent than congruent conditions (\uf776\uf765\uf772\uf762\n1182:               +4: \u03b2^ = 28 ms [2, 54], t = 2.1, p =.035). An interaction of \uf774\uf765\uf76e\uf773\uf765 and lifetime-tense\n1183:               \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 emerged in the \uf776\uf765\uf772\uf762+4 region (\u03b2^ = 119 ms [71, 167], t = 4.9, p <.001).\n1184:               Nested comparisons indicated an effect of \uf763\uf76f\uf76e\uf767\uf772\uf775\uf765\uf76e\uf763\uf765 nested in the present perfect\n1185:               (\u03b2^ = 88 ms [52, 123], t = 4.9, p <.001), but not the simple past (\u03b2^ = 31 ms [ 66, 4],\n1186:               t = 1.7, p =.084).\n1187: "
+        ]
+      }
+    },
+    "skewness": 4.7968,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Raw word duration from individual experiment archive; not transformed or pooled export.",
+    "source_script": "",
+    "input_md5": "a298b008624c228b6f12ba9dd5e8f287",
+    "region_fingerprints": {
+      "critical": "6f2d57494550dd8d43eff942267742e9",
+      "postcritical_4": "313d28f7a0e87fd7add60ac9385fae75"
+    }
+  },
+  {
+    "dataset": "karimi2025_prior_semantic_data",
+    "citation": "karimi_facilitatory_2025",
+    "label": "Archived Karimi et al. (2023) data",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/karimi2025_prior_semantic_data.rds",
+    "source": "preprocessing_robustness/tcz5n-karimi_facilitatory_2025/A1_E1: Semantic Richness, Engagement, & Aging/Karimi et al_2023_RT Data.csv",
+    "sha256": "a6cfc8e9b912437bf399510afbed6b84bd35e2c3825065bd1bae2bee72b7f742",
+    "factors": {
+      "F1": "condition"
+    },
+    "levels": {
+      "F1": [
+        "Pre-modified",
+        "Unmodified"
+      ]
+    },
+    "design": "2",
+    "participants": 337,
+    "items": 173,
+    "observations": 10068,
+    "invalid_or_missing": 4,
+    "repeated_subject_item_condition_cells": 354,
+    "region_counts": {
+      "critical": 10068
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "tcz5n-karimi_facilitatory_2025",
+        "definition": "Separate archived 2023 experiment reanalysed in the 2025 article, not the newly collected age-group dataset; original milliseconds, critical noun at relative position zero."
+      }
+    },
+    "skewness": 49.1861,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Separate archived 2023 experiment reanalysed in the 2025 article, not the newly collected age-group dataset; original milliseconds, critical noun at relative position zero.",
+    "source_script": "A1_E1: Semantic Richness, Engagement, & Aging/Re-analysis of Karimi et al_2023_R1_OSF.Rmd",
+    "input_md5": "11ac2bc878426425691251a5eaf3d6cd",
+    "region_fingerprints": {
+      "critical": "9fb968d65b748640fddfc42c4d788b4e"
+    }
+  },
+  {
+    "dataset": "karimi2025_e1",
+    "citation": "karimi_facilitatory_2025",
+    "label": "karimi2025_e1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/karimi2025_e1.rds",
+    "source": "preprocessing_robustness/tcz5n-karimi_facilitatory_2025/A1_E1: Semantic Richness, Engagement, & Aging/spr_data_OSF.csv",
+    "sha256": "ed1cb63f81def75923759d249478706c80a9833b660607680f8323feef37abcc",
+    "factors": {
+      "F1": "Condition",
+      "F2": "Age_Group"
+    },
+    "levels": {
+      "F1": [
+        "Pre-modified (Sem. Rich)",
+        "Unmodified (Baseline)"
+      ],
+      "F2": [
+        "Older Adults",
+        "Young Adults"
+      ]
+    },
+    "design": "2x2",
+    "participants": 120,
+    "items": 60,
+    "observations": 3606,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 30,
+    "region_counts": {
+      "critical": 3606
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "tcz5n-karimi_facilitatory_2025",
+        "definition": "TargetPos locates the critical target noun; PsychoPy seconds explicitly converted to ms."
+      }
+    },
+    "skewness": 4.5306,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; TargetPos locates the critical target noun; PsychoPy seconds explicitly converted to ms.",
+    "source_script": "",
+    "input_md5": "9fd3d9f87ad6043c9500d715aa50e000",
+    "region_fingerprints": {
+      "critical": "97a1f28805fa7e1fba18cd3b9f0badc7"
+    }
+  },
+  {
+    "dataset": "karimi2025_e3",
+    "citation": "karimi_facilitatory_2025",
+    "label": "karimi2025_e3",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/karimi2025_e3.rds",
+    "source": "preprocessing_robustness/tcz5n-karimi_facilitatory_2025/A2_E1_Modifier Content Retrieval Interference and Aging/Statistical Analyses/_R15_Aim2_Exp1_spr_data_OSF_Final.csv",
+    "sha256": "d9f0dd41bcb8bd00c876df34819efaf797e63abbedd34abfb7e51c3a8350f8e8",
+    "factors": {
+      "F1": "Condition",
+      "F2": "AgeGroup"
+    },
+    "levels": {
+      "F1": [
+        "Modifers_Both",
+        "Modifers_NP1",
+        "Unmodified (Baseline)"
+      ],
+      "F2": [
+        "Older Adults",
+        "Younger Adults"
+      ]
+    },
+    "design": "3x2",
+    "participants": 131,
+    "items": 60,
+    "observations": 4695,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 4695
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "tcz5n-karimi_facilitatory_2025",
+        "definition": "TargetPos locates the critical target noun; PsychoPy seconds explicitly converted to ms."
+      }
+    },
+    "skewness": 3.8366,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; TargetPos locates the critical target noun; PsychoPy seconds explicitly converted to ms.",
+    "source_script": "",
+    "input_md5": "c3619345f54f6d4bcd599861470efb53",
+    "region_fingerprints": {
+      "critical": "0e1946018c49c08007c4fd36a1323271"
+    }
+  },
+  {
+    "dataset": "brockmeyer2026_prediction",
+    "citation": "brockmeyer-koch_explaining_2026",
+    "label": "brockmeyer2026_prediction",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/brockmeyer2026_prediction.rds",
+    "source": "preprocessing_robustness/qudny-brockmeyer-koch_explaining_2026/SPR_data.csv",
+    "sha256": "ac5251e43c8a70d545fa0d88ab7344fa835270dbf1bdc769ae45fdd0c7036641",
+    "factors": {
+      "F1": "Condition"
+    },
+    "levels": {
+      "F1": [
+        "1.0",
+        "2.0",
+        "3.0"
+      ]
+    },
+    "design": "3",
+    "participants": 39,
+    "items": 45,
+    "observations": 3510,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1755,
+      "postcritical": 1755
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "qudny-brockmeyer-koch_explaining_2026",
+        "definition": "Variable sentence-final target selected using Max_phrase, not a fixed phrase column."
+      },
+      "postcritical": {
+        "source": "qudny-brockmeyer-koch_explaining_2026_Brockmeyer-Koch and Schimke - 2026 - Explaining aw.txt",
+        "main_effect": "All reported ROI models show a condition main effect. Include period reading RT, not the subsequent plausibility-decision RT.",
+        "original_numbered_passages": [
+          "423: intercepts for item but was reduced to random intercepts for              on whether a sentence was ultimately judged as possible (see\n424: participant and item for the target and the plausibility judg-            result table in the Online Supplementary Materials).\n425: ment model while for the period model, random effects of\n426: item were completely removed. The final model formulas are                Plausibility judgment\n427: specified in Table 3.\n428:    All models showed a significant main effect of condi-                  As expected, the percentage of \u201cpossible\u201d decisions was very\n429: tion with slower RTs for the unpredictable but plausible                  high in the predictable condition (M = 99.58%, SD = 0.07),\n430: condition than the other two conditions (see Table 3). A                  and very low in the implausible condition (M = 0.42%,\n431: significant main effect of trial number is present in all                 SD = 0.07). In the unpredictable condition, the percentage\n432: three models, suggesting that reading times got faster over               of \u201cpossible\u201d decisions was low with 57.57% (SD = 0.50),\n433: the course of the experiment. The interaction between con-                suggesting that it was much more challenging for participants\n434: dition and trial number was not significant, indicating that              to judge the plausibility in this condition than the others.\n435: this effect was stable across conditions. At the target word\n436: and the plausibility judgment, models revealed a signifi-                 Post hoc plausibility judgment"
+        ]
+      }
+    },
+    "skewness": 9.3825,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Variable sentence-final target selected using Max_phrase, not a fixed phrase column.",
+    "source_script": "SPR_analysis.Rmd: target selected by Max_phrase",
+    "input_md5": "8da4f30ae3a40455a8b17f2b96385322",
+    "region_fingerprints": {
+      "critical": "67b2e1c4eafe1ce3ff9d12ca54c5bb26",
+      "postcritical": "f2e37e22316369bc83fc9efa9d3035b7"
+    }
+  },
+  {
+    "dataset": "schoknecht2025_rep_s1",
+    "citation": "schoknecht_syntactic_2025",
+    "label": "schoknecht2025_rep_s1",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/schoknecht2025_rep_s1.rds",
+    "source": "preprocessing_robustness/4fpru-schoknecht_syntactic_2025/pandora_repS1_data_cleaned_short.csv",
+    "sha256": "efc2909ca8f56bcedb4b094cf8f67ac0938ea8bccbfc054d526a4becc5ba8f16",
+    "factors": {
+      "F1": "syn",
+      "F2": "sem"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ],
+      "F2": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2x2",
+    "participants": 350,
+    "items": 60,
+    "observations": 21000,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 21000
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "4fpru-schoknecht_syntactic_2025",
+        "definition": "Replication source RT; pooled export used ONLY to decode a/b/c/d stimulus factors."
+      }
+    },
+    "skewness": 8.6264,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Replication source RT; pooled export used ONLY to decode a/b/c/d stimulus factors.",
+    "source_script": "",
+    "input_md5": "e290dd103bda821342c03121107b7521",
+    "region_fingerprints": {
+      "critical": "24620390ae8d578deca2d92de1c5fe23"
+    }
+  },
+  {
+    "dataset": "schoknecht2025_rep_s2",
+    "citation": "schoknecht_syntactic_2025",
+    "label": "schoknecht2025_rep_s2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/schoknecht2025_rep_s2.rds",
+    "source": "preprocessing_robustness/4fpru-schoknecht_syntactic_2025/pandora_repS2_data_cleaned_short.csv",
+    "sha256": "1ff6b8c681e59b69ec902a5102da4b187e9bbca77fa50b0285ba8a3355d6aa2b",
+    "factors": {
+      "F1": "syn",
+      "F2": "sem"
+    },
+    "levels": {
+      "F1": [
+        "-0.5",
+        "0.5"
+      ],
+      "F2": [
+        "-0.5",
+        "0.5"
+      ]
+    },
+    "design": "2x2",
+    "participants": 220,
+    "items": 60,
+    "observations": 13200,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 13200
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "4fpru-schoknecht_syntactic_2025",
+        "definition": "Replication source RT; pooled export used ONLY to decode a/b/c/d stimulus factors."
+      }
+    },
+    "skewness": 5.2747,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Replication source RT; pooled export used ONLY to decode a/b/c/d stimulus factors.",
+    "source_script": "",
+    "input_md5": "47a7d66637fbcb554d17d9d6c0a7de23",
+    "region_fingerprints": {
+      "critical": "761f3b45370e57f186894cd848a42af1"
+    }
+  },
+  {
+    "dataset": "schoknecht2026_local_coherence",
+    "citation": "schoknecht_time_2026",
+    "label": "schoknecht2026_local_coherence",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/schoknecht2026_local_coherence.rds",
+    "source": "preprocessing_robustness/m7dqc-schoknecht_time_2026/data/loco_SPR_rawdata.csv",
+    "sha256": "815298c7f3d85dd3a640d66587582b97133b6070f099577f1b790e72579f2188",
+    "factors": {
+      "F1": "cond"
+    },
+    "levels": {
+      "F1": [
+        "loco",
+        "noco"
+      ]
+    },
+    "design": "2",
+    "participants": 150,
+    "items": 26,
+    "observations": 3900,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3900
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "m7dqc-schoknecht_time_2026",
+        "definition": "Experimental local/nonlocal-coherence items; verb is the disambiguation site."
+      }
+    },
+    "skewness": 5.0577,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Experimental local/nonlocal-coherence items; verb is the disambiguation site.",
+    "source_script": "prep_dfs_for_models.R",
+    "input_md5": "344aa106ce70f880b8f9687334f3f238",
+    "region_fingerprints": {
+      "critical": "bd67d576fddb549c90485fbdc7c2355f"
+    }
+  },
+  {
+    "dataset": "keshev2026_e3a",
+    "citation": "keshev_representation_2026",
+    "label": "keshev2026_e3a",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/keshev2026_e3a.rds",
+    "source": "preprocessing_robustness/gdjne-keshev_representation_3a-b/saluki-spr-4afc.csv",
+    "sha256": "19a872f2a0618645876346b73b348486eccca8dccaf60f88e2e5f840b9df4328",
+    "factors": {
+      "F1": "cue",
+      "F2": "agreement"
+    },
+    "levels": {
+      "F1": [
+        "noCue",
+        "withCue"
+      ],
+      "F2": [
+        "distractor",
+        "neither",
+        "target"
+      ]
+    },
+    "design": "2x3",
+    "participants": 166,
+    "items": 36,
+    "observations": 11952,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5976,
+      "postcritical": 5976
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "gdjne-keshev_representation_3a-b",
+        "definition": "Auxiliary at aligned region i=9. Item-specific source-script offsets for 6,10,23,32."
+      },
+      "postcritical": {
+        "source": "gdjne-keshev_representation_3a-b_Keshev et al. - 2026 - Representation distortion c.txt",
+        "main_effect": "Original paper explicitly identifies a grammaticality main effect at the past-participle spillover.",
+        "original_numbered_passages": [
+          "860: response times below 100 ms and above 3,000 ms (a\ufb00ecting 2.09%               following word (the past participle) are summarized in Table 6.\n861: of the data of Experiment 3a, and no data points in Experiment                   In Experiment 3a, we observed only grammaticality e\ufb00ects,\n862: 3b). We analyze reading times on the second verb in separate                 such that grammatical verbs were read faster than ungrammatical\n863: models\u2014one for the auxiliary carrying the number agreement,                  ones. These e\ufb00ects appeared at the spillover region, as a main e\ufb00ect\n864: and one for the following past participle. Contrast coding and all           and in the nested contrast. The models did not support a main e\ufb00ect\n865: modeling parameters are identical to those used for the reading              of attraction, nested attraction contrasts, or an interaction between\n866: time measures in Experiment 2. Results of the 4AFC task are                  attraction and cue availability (Table 6).\n867: analyzed separately in Section 5.                                                In Experiment 3b, in addition to a grammaticality e\ufb00ect, the\n868:     We also analyze RTs at the \ufb01rst verb and the subject, to probe           model also detected a main e\ufb00ect of attraction. Both attraction and\n869: for the ungrammaticality illusion e\ufb00ects observed in Experiment              grammaticality e\ufb00ects arose at the spillover and had the expected\n870: 2. However, it is important to consider that, in Experiment                  directionality: grammatical conditions were read faster than"
+        ]
+      }
+    },
+    "skewness": 50.9639,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Auxiliary at aligned region i=9. Item-specific source-script offsets for 6,10,23,32.",
+    "source_script": "saluki-spr-a.Rmd: region tagging",
+    "input_md5": "dadc96a714d98030f151a8529e121293",
+    "region_fingerprints": {
+      "critical": "9870c3e38f67215c672debf3248f1c03",
+      "postcritical": "b0cb240707b9b6733834d75e902678f0"
+    }
+  },
+  {
+    "dataset": "keshev2026_e3b",
+    "citation": "keshev_representation_2026",
+    "label": "keshev2026_e3b",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/keshev2026_e3b.rds",
+    "source": "preprocessing_robustness/gdjne-keshev_representation_3a-b/saluki-spr-yn.csv",
+    "sha256": "2560aff1909ab384b3e6fc332adae9595279a5a3b5f396c4553345b7a037f27a",
+    "factors": {
+      "F1": "Cue",
+      "F2": "Agreement"
+    },
+    "levels": {
+      "F1": [
+        "noCue",
+        "withCue"
+      ],
+      "F2": [
+        "distractor",
+        "neither",
+        "target"
+      ]
+    },
+    "design": "2x3",
+    "participants": 126,
+    "items": 36,
+    "observations": 9144,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 72,
+    "region_counts": {
+      "critical": 4572,
+      "postcritical": 4572
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "gdjne-keshev_representation_3a-b",
+        "definition": "Auxiliary at aligned region i=9. Item-specific source-script offsets for 6,10,23,32."
+      },
+      "postcritical": {
+        "source": "gdjne-keshev_representation_3a-b_Keshev et al. - 2026 - Representation distortion c.txt",
+        "main_effect": "Original paper explicitly identifies grammaticality and attraction main effects at spillover.",
+        "original_numbered_passages": [
+          "865: modeling parameters are identical to those used for the reading              of attraction, nested attraction contrasts, or an interaction between\n866: time measures in Experiment 2. Results of the 4AFC task are                  attraction and cue availability (Table 6).\n867: analyzed separately in Section 5.                                                In Experiment 3b, in addition to a grammaticality e\ufb00ect, the\n868:     We also analyze RTs at the \ufb01rst verb and the subject, to probe           model also detected a main e\ufb00ect of attraction. Both attraction and\n869: for the ungrammaticality illusion e\ufb00ects observed in Experiment              grammaticality e\ufb00ects arose at the spillover and had the expected\n870: 2. However, it is important to consider that, in Experiment                  directionality: grammatical conditions were read faster than\n871: \n872: \n873: \n874: Frontiers in Language Sciences                                          13                                                          frontiersin.org\n875: "
+        ]
+      }
+    },
+    "skewness": 13.7056,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Auxiliary at aligned region i=9. Item-specific source-script offsets for 6,10,23,32.",
+    "source_script": "saluki-spr-b.Rmd: region tagging",
+    "input_md5": "4faf7256baf8a149dc092267ef831d22",
+    "region_fingerprints": {
+      "critical": "b164a1c916c046997ead40e99983cd1d",
+      "postcritical": "eca072b228ff3f56d24da157efcda397"
+    }
+  },
+  {
+    "dataset": "cutter2023_either",
+    "citation": "cutter_syntactic_2023",
+    "label": "cutter2023_either",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/cutter2023_either.rds",
+    "source": "preprocessing_robustness/cwyk6-cutter_syntactic_2023/DataForOSF.zip",
+    "sha256": "a03cc651973951b9e14991ce564cacae3aac01be484188ce3baeb57b7c8402d8",
+    "factors": {
+      "F1": "Condition",
+      "F2": "AgeGroup"
+    },
+    "levels": {
+      "F1": [
+        "Pred",
+        "Unpred"
+      ],
+      "F2": [
+        "older",
+        "younger"
+      ]
+    },
+    "design": "2x2",
+    "participants": 120,
+    "items": 32,
+    "observations": 3840,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 3840
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "cwyk6-cutter_syntactic_2023",
+        "definition": "Author script: reading-zone Screen 2, EitherOr experiment, Attempt 3 target. No author RT cuts."
+      }
+    },
+    "skewness": 10.8263,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Author script: reading-zone Screen 2, EitherOr experiment, Attempt 3 target. No author RT cuts.",
+    "source_script": "EitherAnalysisScriptOSF.R",
+    "input_md5": "d6302fbf82ecc08588ff8f7c6f571e61",
+    "region_fingerprints": {
+      "critical": "87fd63788bc909225b9684f7e98e4c22"
+    }
+  },
+  {
+    "dataset": "ishihara2025_e2",
+    "citation": "ishihara_evaluating_2025",
+    "label": "ishihara2025_e2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/ishihara2025_e2.rds",
+    "source": "preprocessing_robustness/he6cf-ishihara_evaluating_2025/Statistical analysis/E2_dataset_master.xlsx",
+    "sha256": "62f91ff362f09012f86488d5d3d5ad20d1db14e68d292bd3e4725c8960c470f1",
+    "factors": {
+      "F1": "Group",
+      "F2": "Grammaticality"
+    },
+    "levels": {
+      "F1": [
+        "Home",
+        "School"
+      ],
+      "F2": [
+        "Grammatical",
+        "Ungrammatical"
+      ]
+    },
+    "design": "2x2",
+    "participants": 134,
+    "items": 80,
+    "observations": 10718,
+    "invalid_or_missing": 4642,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 10718
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "he6cf-ishihara_evaluating_2025",
+        "definition": "Trial-level SPR.long outcome; School/Home administration groups. CR is correctness, NOT a region index; SOE is not the original RT."
+      }
+    },
+    "skewness": 11.4661,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Trial-level SPR.long outcome; School/Home administration groups. CR is correctness, NOT a region index; SOE is not the original RT.",
+    "source_script": "",
+    "input_md5": "c4a8093651bccb824109e9ab804aa21a",
+    "region_fingerprints": {
+      "critical": "3243162b57ed5615cfc4a432b850207a"
+    }
+  },
+  {
+    "dataset": "orth2026_lmaze",
+    "citation": "orth_extending_2026",
+    "label": "orth2026_lmaze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/orth2026_lmaze.rds",
+    "source": "preprocessing_robustness/naj9k-orth_extending_2026/L_Maze/L_Maze_Result.csv",
+    "sha256": "d75fa82979fa7471ca13c62532bd5125c7c2f234d8a7be2e334039fe47856cfd",
+    "factors": {
+      "F1": "RC_type",
+      "F2": "locality"
+    },
+    "levels": {
+      "F1": [
+        "ORC",
+        "SRC"
+      ],
+      "F2": [
+        "local",
+        "nonlocal"
+      ]
+    },
+    "design": "2x2",
+    "participants": 50,
+    "items": 32,
+    "observations": 1553,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1553
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "naj9k-orth_extending_2026",
+        "definition": "Relative-pronoun site wordnumber=2, correct first choice only. The separate Appendix archive is not silently added as a new cohort."
+      }
+    },
+    "skewness": 3.9899,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Relative-pronoun site wordnumber=2, correct first choice only. The separate Appendix archive is not silently added as a new cohort.",
+    "source_script": "L_Maze/Stats_L_Maze_Updated.R",
+    "input_md5": "df3a8a1d50b127352d9c5a8d37a165b2",
+    "region_fingerprints": {
+      "critical": "3f88ceb2ca55f14ef96457a3d15ab525"
+    }
+  },
+  {
+    "dataset": "orth2026_amaze",
+    "citation": "orth_extending_2026",
+    "label": "orth2026_amaze",
+    "task": "Maze",
+    "tier": "primary",
+    "data": "primary_inputs/orth2026_amaze.rds",
+    "source": "preprocessing_robustness/naj9k-orth_extending_2026/A_Maze/A_Maze_Result.csv",
+    "sha256": "ef78f04d4ef9a6be4b825c230cb97b9267312cd66c51107cbb33e00d90d65b67",
+    "factors": {
+      "F1": "RC_type",
+      "F2": "locality"
+    },
+    "levels": {
+      "F1": [
+        "ORC",
+        "SRC"
+      ],
+      "F2": [
+        "local",
+        "nonlocal"
+      ]
+    },
+    "design": "2x2",
+    "participants": 51,
+    "items": 32,
+    "observations": 1534,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1534
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "naj9k-orth_extending_2026",
+        "definition": "Relative-pronoun site wordnumber=2, correct first choice only. The separate Appendix archive is not silently added as a new cohort."
+      }
+    },
+    "skewness": 23.8399,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Relative-pronoun site wordnumber=2, correct first choice only. The separate Appendix archive is not silently added as a new cohort.",
+    "source_script": "A_Maze/Stats_A_Maze_Updated.R",
+    "input_md5": "56111dae947c3c2c82620ca333b632c8",
+    "region_fingerprints": {
+      "critical": "1ec8b00df8b44707c0bfcb33d4687161"
+    }
+  },
+  {
+    "dataset": "winkowski2024_e2",
+    "citation": "winkowski_searching_2024",
+    "label": "winkowski2024_e2",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/winkowski2024_e2.rds",
+    "source": "preprocessing_robustness/2xcgu-winkowski_searching_2024/experiment 2/results/results_all.csv",
+    "sha256": "814826cee3b644ce35dc8c22ab9736b172ef62c3cf7e8bcabe89afb0047f2464",
+    "factors": {
+      "F1": "trigger",
+      "F2": "dist"
+    },
+    "levels": {
+      "F1": [
+        "nil",
+        "too"
+      ],
+      "F2": [
+        "0.0",
+        "8.0"
+      ]
+    },
+    "design": "2x2",
+    "participants": 82,
+    "items": 24,
+    "observations": 3936,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1968,
+      "postcritical": 1968
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment 2/src/03-regions.R",
+        "definition": "Author-relative region 0."
+      },
+      "postcritical": {
+        "source": "Paper, E2/E4 reading-time results",
+        "definition": "Author-relative region 1.",
+        "main_effect": "Trigger effect negative credible interval at postcritical region."
+      }
+    },
+    "skewness": 5.0238,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Too versus corresponding nil position; exact author alignment exceptions.",
+    "source_script": "experiment 2/src/03-regions.R",
+    "input_md5": "62956c6c736bb5934b5abd5e896d10af",
+    "region_fingerprints": {
+      "critical": "5d0883bec513c345b07c7e7d11709f1e",
+      "postcritical": "f2423eb32559be1cdeebfb5b2d13408a"
+    }
+  },
+  {
+    "dataset": "winkowski2024_e4",
+    "citation": "winkowski_searching_2024",
+    "label": "winkowski2024_e4",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/winkowski2024_e4.rds",
+    "source": "preprocessing_robustness/2xcgu-winkowski_searching_2024/experiment 4/results/results_all.csv",
+    "sha256": "735ecaa53da166c8e115705b8b915492311eb55f1c47718b9e08f29f557ae2be",
+    "factors": {
+      "F1": "trigger",
+      "F2": "dist"
+    },
+    "levels": {
+      "F1": [
+        "nil",
+        "too"
+      ],
+      "F2": [
+        "long",
+        "short"
+      ]
+    },
+    "design": "2x2",
+    "participants": 79,
+    "items": 24,
+    "observations": 3792,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 1896,
+      "postcritical": 1896
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "experiment 4/src/02-regions.R",
+        "definition": "Author-relative region 0."
+      },
+      "postcritical": {
+        "source": "Paper, E2/E4 reading-time results",
+        "definition": "Author-relative region 1.",
+        "main_effect": "Trigger effect negative credible interval at postcritical region."
+      }
+    },
+    "skewness": 13.0627,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Too versus corresponding nil position; exact author alignment exceptions.",
+    "source_script": "experiment 4/src/02-regions.R",
+    "input_md5": "65db0900d7303ee757d017634487b105",
+    "region_fingerprints": {
+      "critical": "3b0e433a7d9a00f1d9f020b30274a5ff",
+      "postcritical": "7b32958e560cb31db9793b762d1e1342"
+    }
+  },
+  {
+    "dataset": "scheffler2022_emoji",
+    "citation": "scheffler_processing_2022",
+    "label": "scheffler2022_emoji",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/scheffler2022_emoji.rds",
+    "source": "preprocessing_robustness/d34y5-scheffler_processing_2022/experiment-raw-data/emoji-homophones-data.csv",
+    "sha256": "923642aaed79bae94351e0e59de702737c16d7d9b5d977d6e5bf0b50f255558c",
+    "factors": {
+      "F1": "condition"
+    },
+    "levels": {
+      "F1": [
+        "homophone",
+        "match",
+        "word"
+      ]
+    },
+    "design": "3",
+    "participants": 63,
+    "items": 29,
+    "observations": 1890,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 63,
+    "region_counts": {
+      "critical": 1890
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "d34y5-scheffler_processing_2022",
+        "definition": "Original notebook get_critical returns the fourth-from-last RT; condition mapping copied from its six item lists and A/B/C assignment."
+      }
+    },
+    "skewness": 3.3737,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Original notebook get_critical returns the fourth-from-last RT; condition mapping copied from its six item lists and A/B/C assignment.",
+    "source_script": "analysis-code/emoji-homophones-lmm.ipynb",
+    "input_md5": "f83fb1f60387085afc99cf92314f7483",
+    "region_fingerprints": {
+      "critical": "fce5c601986e5a1907ad32ea235ab22d"
+    }
+  },
+  {
+    "dataset": "paape2025_spr_semantic",
+    "citation": "paape_local_2025",
+    "label": "paape2025_spr_semantic",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/paape2025_spr_semantic.rds",
+    "source": "preprocessing_robustness/f8qwh-paape_local_2025/Experiment 1 (SPR)/lc_spr_trialinfo2.Rda",
+    "sha256": "3662879c62aeaf43f9ca1101ea302fa8271211e3f2648e1df9707b3001aede52",
+    "factors": {
+      "F1": "coh",
+      "F2": "red"
+    },
+    "levels": {
+      "F1": [
+        "-1",
+        "1"
+      ],
+      "F2": [
+        "-1",
+        "1"
+      ]
+    },
+    "design": "2x2",
+    "participants": 166,
+    "items": 32,
+    "observations": 5311,
+    "invalid_or_missing": 1,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical": 5311
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "f8qwh-paape_local_2025",
+        "definition": "Second source object only, untrimmed rt. no==critno selects the verb. First source object is combined in author script but has prior RT bounds."
+      }
+    },
+    "skewness": 5.2858,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Second source object only, untrimmed rt. no==critno selects the verb. First source object is combined in author script but has prior RT bounds.",
+    "source_script": "Experiment 1 (SPR)/analyses-spr-new.Rmd",
+    "input_md5": "28906f9a978e8b39a9d36ecb273305fc",
+    "region_fingerprints": {
+      "critical": "0b5c9d6994556a63ace42d77fd01420c"
+    }
+  },
+  {
+    "dataset": "wilke2025_appositives",
+    "citation": "wilke_processing_2025",
+    "label": "wilke2025_appositives",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/wilke2025_appositives.rds",
+    "source": "preprocessing_robustness/3tjwv-wilke_processing_2025/Data/data(200)_final.txt.zip",
+    "sha256": "3d4ea4ef0aa917008e8e84b58798c5c5e631ca4b1cf6b61ab327a70636e7e6c0",
+    "factors": {
+      "F1": "clause.order",
+      "F2": "information.order"
+    },
+    "levels": {
+      "F1": [
+        "ARC-matrix",
+        "matrix-ARC"
+      ],
+      "F2": [
+        "given-new",
+        "new-given"
+      ]
+    },
+    "design": "2x2",
+    "participants": 200,
+    "items": 32,
+    "observations": 12864,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 0,
+    "region_counts": {
+      "critical_arc": 6432,
+      "critical_matrix": 6432
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "3tjwv-wilke_processing_2025",
+        "definition": "Untrimmed RT in author-retained 200-participant cohort. Prepared files supply only categorical item/word-position annotations, never RT or row eligibility."
+      }
+    },
+    "skewness": 5.8441,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; Untrimmed RT in author-retained 200-participant cohort. Prepared files supply only categorical item/word-position annotations, never RT or row eligibility.",
+    "source_script": "Data/ISclauses_res.rtData.R",
+    "input_md5": "8b47ec7b00f89690e3bc5f1bde43ca93",
+    "region_fingerprints": {
+      "critical_arc": "dc6646d044d3b71b5aae10b869188320",
+      "critical_matrix": "7c35f650a0a28ec54055f4b73dd3d8b1"
+    }
+  },
+  {
+    "dataset": "ito2026_predictability",
+    "citation": "ito_predictability_2026",
+    "label": "ito2026_predictability",
+    "task": "SPR",
+    "tier": "primary",
+    "data": "primary_inputs/ito2026_predictability.rds",
+    "source": "preprocessing_robustness/7zvhg-ito_predictability_2026/results_listA1.csv",
+    "sha256": "e8c850a2b7bd72b66e9df8aebcb11ba9d1ceb1941100afb4482268c86c19385a",
+    "factors": {
+      "F1": "Condition",
+      "F2": "Task"
+    },
+    "levels": {
+      "F1": [
+        "High-cloze",
+        "Low-cloze"
+      ],
+      "F2": [
+        "Load",
+        "NoLoad"
+      ]
+    },
+    "design": "2x2",
+    "participants": 136,
+    "items": 88,
+    "observations": 12320,
+    "invalid_or_missing": 0,
+    "repeated_subject_item_condition_cells": 176,
+    "region_counts": {
+      "critical": 12320
+    },
+    "roi_evidence": {
+      "critical": {
+        "source": "7zvhg-ito_predictability_2026",
+        "definition": "All four list logs, PennController-DashedSentence rows; column 30 reading RT at Target_position; verified against actual target word. The source hash records A1; companion list hashes are in the input manifest."
+      }
+    },
+    "skewness": 7.4202,
+    "original_removal": "See original script and folder audit",
+    "original_transform": "See original script and folder audit",
+    "eligibility": "Recorded original-scale RT; positive finite observations; All four list logs, PennController-DashedSentence rows; column 30 reading RT at Target_position; verified against actual target word. The source hash records A1; companion list hashes are in the input manifest.",
+    "source_script": "",
+    "input_md5": "cd1d2c22ced6756fd1a895f235d848a1",
+    "region_fingerprints": {
+      "critical": "bfeda80fcfa11212cbb5164dbd824f70"
+    }
+  }
+]

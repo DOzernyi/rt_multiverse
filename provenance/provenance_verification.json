@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "inputs": 79,
+  "observations": 513693,
+  "source_files_hashed": 91,
+  "source_family_dependency_rows": 249,
+  "elapsed_seconds": 776.2998873600009,
+  "maximum_RT_roundtrip_difference_ms": 1.8189894035458565e-12,
+  "scope": "Fresh reconstruction with the supplied source adapters, independent comparison to compact fitted inputs and audit ledgers.",
+  "limitations": [
+    "Adapter reconstruction verifies implemented mappings, not an independent rereading of every source paper.",
+    "Source-family dependencies are deliberately overinclusive, not a claim every listed file contributes rows to every input.",
+    "Equivalent numeric identifier spellings are normalized only for comparison; fitted inputs are not changed.",
+    "Source document availability does not establish redistribution permission."
+  ]
+}

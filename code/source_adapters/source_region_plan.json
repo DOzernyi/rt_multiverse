@@ -1,0 +1,21 @@
+{
+  "fujita_memory_2024_e1": {"extra_regions":{"spillover":"postcritical"},"paper_prefix":"nhc2p","lines":[[646,665]],"reason":"Overall grammaticality effect at the spillover region; distinct from the nested interference contrasts."},
+  "fujita_memory_2024_e2": {"extra_regions":{"spillover":"postcritical"},"paper_prefix":"nhc2p","lines":[[780,787]],"reason":"Overall grammaticality effect at spillover, 95% CrI [19,34] ms."},
+  "fujita_active_2026_e1": {"extra_regions":{"Post-disambiguating region":"postcritical"},"paper_prefix":"qfnsg","lines":[[375,381]],"reason":"Ambiguity main effect at post-disambiguation, p<.001."},
+  "fujita_active_2026_e2": {"extra_regions":{"Post-disambiguating region":"postcritical"},"paper_prefix":"qfnsg","lines":[[490,496]],"reason":"Ambiguity main effect at post-disambiguation, p<.001."},
+  "fujita_active_2026_e3": {"extra_regions":{"Post-disambiguating region":"postcritical"},"paper_prefix":"qfnsg","lines":[[570,576]],"reason":"Ambiguity main effect at post-disambiguation, p<.001."},
+  "fujita2025_active": {"extra_regions":{"Spillover region":"postcritical"},"paper_prefix":"9dp6e","lines":[[205,211]],"reason":"Maintenance main effect at spillover, t=-2.36, interval excludes zero."},
+  "fujita2025_spr": {"extra_regions":{"Post-disambiguating region":"postcritical"},"paper_prefix":"kftg7","lines":[[83,100]],"anchor_regex":"\\b5\\.68\\b","reason":"SPR post-disambiguating ambiguity main effect, t=5.68; do not generalize this to L-maze."},
+  "fujita_real-time_2026_e2": {"extra_regions":{"Spillover region":"postcritical"},"paper_prefix":"t42b6","lines":[[387,394]],"reason":"Experiment 2 interpretation main effect at spillover, t=2.40; not the E1 null or E3 interaction."},
+  "keshev2024_e1": {"extra_regions":{"spill":"postcritical"},"paper_prefix":"qz93x","lines":[[395,406]],"reason":"The original paper explicitly reports three main effects at the spillover region."},
+  "kim2024_e1": {"extra_regions":{"8":"postcritical"},"paper_prefix":"rsdp5","lines":[[495,508]],"reason":"Overall grammaticality main effect at spillover, in addition to its nested attraction contrasts."},
+  "kim2024_e2": {"extra_regions":{"7":"postcritical"},"paper_prefix":"rsdp5","lines":[[823,837]],"reason":"Original model table reports overall grammaticality main effect at spillover: estimate .031, SE .008, t=4.08."},
+  "kim2024_e3": {"extra_regions":{"9":"postcritical"},"paper_prefix":"rsdp5","lines":[[1064,1079]],"reason":"Original model table reports overall grammaticality main effect at spillover: estimate .027, SE .010, t=2.85."},
+  "keshev2026_e3a": {"extra_regions":{"10":"postcritical"},"paper_prefix":"gdjne","lines":[[860,870]],"reason":"Original paper explicitly identifies a grammaticality main effect at the past-participle spillover."},
+  "keshev2026_e3b": {"extra_regions":{"10":"postcritical"},"paper_prefix":"gdjne","lines":[[865,875]],"reason":"Original paper explicitly identifies grammaticality and attraction main effects at spillover."},
+  "palleschi2026_e1": {"extra_regions":{"verb+3":"postcritical_3","verb+4":"postcritical_4"},"paper_prefix":"n38tk","lines":[[743,752]],"reason":"Lifetime-tense congruence main effects at verb+3 (p=.001) and verb+4 (p<.001)."},
+  "palleschi2026_e2": {"extra_regions":{"verb+3":"postcritical_3","verb+4":"postcritical_4"},"paper_prefix":"n38tk","lines":[[952,965]],"reason":"Lifetime-tense congruence main effects at verb+3 and verb+4."},
+  "palleschi2026_e3": {"extra_regions":{"verb+4":"postcritical_4"},"paper_prefix":"n38tk","lines":[[1175,1187]],"reason":"Lifetime-tense congruence main effect at verb+4, p=.035."},
+  "dlugosz2025_def": {"wide_extra":{"Preposition":"postcritical"},"paper_prefix":"fp86z","lines":[[608,621]],"reason":"Grammaticality main effect at the definite-phrase preposition; a simultaneous interaction does not negate the main effect."},
+  "brockmeyer2026_prediction": {"wide_extra":{"RT_period":"postcritical"},"paper_prefix":"qudny","lines":[[423,436]],"reason":"All reported ROI models show a condition main effect. Include period reading RT, not the subsequent plausibility-decision RT."}
+}

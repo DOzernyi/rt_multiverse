@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "datasets": 79,
+  "region_jobs": 111,
+  "coefficient_rows_verified": 29640,
+  "nominal_pipeline_rows": 8658,
+  "checks": ["source/input checkpoint identity", "sample sizes and valid responses", "complete policy coverage", "accepted fits nonsingular", "t and p arithmetic", "confidence interval arithmetic", "exact log10 rescaling"]
+}

@@ -1,0 +1,11 @@
+{
+  "complete_region_jobs": 111,
+  "recorded_job_elapsed_seconds": 385602.845920324,
+  "recorded_job_elapsed_hours": 107.111901644535,
+  "longest_job_seconds": 44303.4082977772,
+  "longest_job": {
+    "dataset": "tucker2021_e5a",
+    "region": "critical"
+  },
+  "interpretation": "Sum of recorded job elapsed times, including recorded resumptions. Not CPU time or end-to-end wall time; jobs overlapped in parallel. Excluded/abandoned runs and unrecorded setup time are not included. The study is an empirical multiverse reanalysis, not a Monte Carlo simulation."
+}

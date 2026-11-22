@@ -1,0 +1,111 @@
+\documentclass[iicol,lineno,pdflatex,sn-apa]{sn-jnl}
+%\usepackage{fontspec}
+\newcounter{glossnum}
+\newcommand{\numgloss}{\refstepcounter{glossnum}\alph{glossnum}.\space}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest} %width=8cm,
+\usetikzlibrary{decorations.markings}
+\renewcommand{\theglossnum}{\the\excnt\alph{glossnum}}
+\usepackage{multicol}
+\usepackage[linguistics]{forest}
+\forestset{qtree edges/.style={for tree=
+  {parent anchor=south, child anchor=north}}}
+\usepackage{natbib}
+\usepackage{expex}
+\usepackage{dirtytalk}
+%\usepackage[
+  % protrusion=true,
+  % activate={true,nocompatibility},
+  % final,
+  % tracking=true,
+  % kerning=true,
+  % spacing=true,
+  % factor=1100]{microtype}
+%\microtypecontext{spacing=nonfrench}
+%\SetTracking{encoding={*}, shape=sc}{40}
+\usepackage{mathtools} % loads amsmath
+\usepackage{underscore}
+\usepackage{amssymb}  % loads amsfonts (must come before mathabx to avoid \ulcorner redefinition errors)
+\usepackage{qtree}
+\usepackage{stmaryrd}
+\usepackage{cases}
+\usepackage{stackengine}
+\usepackage{mathabx,booktabs,longtable,pdflscape}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{lmodern}
+\usepackage{multirow}%
+\usepackage{amsthm,setspace}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{listings}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\rtprocess}{\texttt{rt\_process()}}
+
+\definecolor{codebackground}{RGB}{246,246,243}
+\definecolor{codecomment}{RGB}{0,110,45}
+\definecolor{codestring}{RGB}{115,40,150}
+
+\lstdefinestyle{rtprocessR}{
+ language=R,
+ basicstyle=\ttfamily\small,
+ backgroundcolor=\color{codebackground},
+ commentstyle=\color{codecomment},
+ stringstyle=\color{codestring},
+ frame=single,
+ breaklines=true,
+ breakatwhitespace=false,
+ showstringspaces=false,
+ columns=fullflexible,
+ keepspaces=true,
+ captionpos=b
+}
+\lstset{style=rtprocessR}
+
+\usepackage{listings}%
+\raggedbottom
+% hyperref is already loaded by the class (sn-jnl.cls); configure it here to avoid an option clash.
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[title]{title}
+
+%%=============================================================%%
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
+%% \sfx{IV}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author*[1]{\fnm{Daniil M.} \sur{Ozernyi}}\email{xun@gapp.nthu.edu.tw}
+
+\affil*[1]{\orgdiv{Institute of Linguistics}, \orgname{National Tsing Hua University}, \orgaddress{\street{Kuang-Fu Rd, Sec. 2}, \city{Hsinchu}, \postcode{300044}, \country{Taiwan}}}
+
+\abstract{ }
+
+\keywords{}
+
+\maketitle
+
+\section{Introduction}
+
+\end{document}

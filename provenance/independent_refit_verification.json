@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "models": {
+    "fujita2021_e1": {
+      "max_estimate_discrepancy_in_SE": 7.7164e-06,
+      "max_relative_SE_discrepancy": 0,
+      "same_significance": true
+    },
+    "winkowski2024_e2": {
+      "max_estimate_discrepancy_in_SE": 6.4622e-06,
+      "max_relative_SE_discrepancy": 0,
+      "same_significance": true
+    },
+    "brockmeyer2026_prediction": {
+      "max_estimate_discrepancy_in_SE": 5.0174e-07,
+      "max_relative_SE_discrepancy": 0,
+      "same_significance": true
+    }
+  }
+}

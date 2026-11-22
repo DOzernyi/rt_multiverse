@@ -1,0 +1,43 @@
+% Editable TikZ source; the publisher class is not modified.
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=4mm and 5mm,
+  stage/.style={draw=black!65,rounded corners=1.5pt,fill=blue!3,
+    text width=12.4cm,align=center,inner sep=5pt,font=\small},
+  side/.style={stage,text width=3.1cm,font=\footnotesize,fill=orange!7},
+  flow/.style={-{Stealth[length=2mm]},thick,draw=black!70}
+]
+\node[stage] (source) {Source audit: articles, scripts, original RT columns and archived files\\
+  Identify design, participant/material IDs, and source-justified analysis regions};
+\node[stage,below=of source] (input) {Common eligible input, before multiverse screening\\
+  Positive finite RTs; fixed task/cohort restrictions; compact RDS and input fingerprints};
+\node[stage,below=of input] (cross) {13 noniterative exclusion rules within condition $\times$ region\\
+  Cross with 6 scales: 78 nominal outputs, 65 distinct workflows};
+\node[stage,below=of cross] (fit) {Design-supported maximal mixed model\\
+  Sum-coded fixed effects and interactions; participant/material intercepts and slopes};
+\node[stage,below=of fit,text width=7.8cm,xshift=-2.3cm] (check) {Acceptance: converged \emph{and} nonsingular?\\
+  Retain every attempted formula and removal decision};
+\node[side,right=of check] (reduce) {If not: remove correlations first; then repeatedly remove the smallest-variance component};
+\node[stage,below=of check,text width=7.8cm] (output) {If accepted: coefficients, SE, $t$, df, $p$, CIs,\\
+  retention, variance components and conditional contrasts};
+\node[side,right=of output] (fail) {If no estimable random structure remains: record unavailable inference, not $p\geq .05$};
+\node[stage,below=of output,text width=12.4cm,xshift=2.3cm] (summary) {Three outcomes: significance stability; effect/direction stability; precision stability\\
+  Average within dataset, then publication; publication-cluster uncertainty and exploratory moderators};
+\draw[flow] (source)--(input);
+\draw[flow] (input)--(cross);
+\draw[flow] (cross)--(fit);
+\draw[flow] (fit.south)--(check.north);
+\draw[flow] (check)--(output);
+\draw[flow] (check)--(reduce);
+\draw[flow] (reduce.east)--++(7mm,0)|-(fit.east);
+\draw[flow] (reduce)--(fail);
+\draw[flow] (output.south)--(summary.north);
+\end{tikzpicture}
+\caption{The preprocessing multiverse and its inferential workflow. Screening
+precedes transformation. Each distinct workflow includes the same prespecified
+random-effects acceptance and reduction procedure; all attempts remain auditable.
+Equivalent natural/base-10 logarithms are not counted twice in stability summaries.
+Unavailable results are reported separately.}
+\label{fig:workflow}
+\end{figure*}
