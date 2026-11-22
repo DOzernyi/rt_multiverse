@@ -1,9 +1,7 @@
-# Reading-time preprocessing multiverse — OSF release
+# Reading-time preprocessing multiverse — OSF release (moved to GitHub after OSF removed Projects)
 
 ## Contents
 
-- `manuscript/`: current PDF and standalone Overleaf-ready LaTeX sources,
-  including vector EPS/PDF figures and unchanged Springer publisher files.
 - `data/`: **79 primary analytical inputs**, original-scale eligible RTs,
   factor mappings and input/checkpoint fingerprints; no secondary inputs.
 - `checkpoints/`: **111 completed region jobs**. These small saved results
@@ -26,27 +24,8 @@ natural and base-10 logarithms give identical inferential results.
 `MANIFEST.csv` contains SHA-256 and byte size for every release file except
 the manifest itself. No network access is needed.
 
-## Regenerate the paper without refitting
-
-    python3 reproduce.py
-
-Requires Python 3.11+ (pandas, numpy), R (lme4, lmerTest, jsonlite), a normal
-TeX distribution with pdfLaTeX/BibTeX, TikZ and xurl, and Ghostscript.
-`Rscript`, `pdflatex`, `bibtex`, and `gs` must be on PATH.
-R scripts also use the standard stats, parallel and graphics packages.
-No Replit account, secrets, absolute project paths, or network service is needed.
-The recorded R session is in `provenance/sessionInfo.txt`.
-
-The command creates a separate `_build/reproduce-.../` directory, verifies
-inputs, regenerates tables and all figures, and compiles a new PDF. It never
-changes the supplied data, checkpoints or manuscript. Do not upload `_build/`
-back to OSF; it is disposable output. Edit `code/analysis/manuscript_body.tex`
-and the paper/figure builders to revise regenerated outputs, not a temporary
-build. Existing release-file hash checks will then correctly report your edits.
-The complete checkpoint-based reproduction was tested successfully in this
-workspace in approximately 3.4 minutes; this is a measured example, not a
-runtime guarantee for another computer. See
-`provenance/portable_reproduction_test.json`.
+## Note
+The original files included a script to generate the paper, but they are removed for the duration of review.
 
 ## Runtime warning and a complete fresh fit
 
